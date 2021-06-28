@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MySpotPackagePortofolioCollectionCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3A-wX-YE9">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mMj-fN-jy4">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXF-zd-xqq">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="203"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="jC8-b4-VH5"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0q-ri-BoO">
+                                <rect key="frame" x="164" y="10" width="26" height="26"/>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="OfG-PP-Lcd"/>
+                                    <constraint firstAttribute="width" constant="26" id="kBP-wb-aZH"/>
+                                </constraints>
+                                <state key="normal" image="deleteSmallWhite"/>
+                                <connections>
+                                    <action selector="deleteButtonDidClicked" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Jc-mv-e5s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Concert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="z2H-c0-etl">
+                                <rect key="frame" x="10" y="173.5" width="180" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XXF-zd-xqq" secondAttribute="bottom" id="J24-Hu-BHJ"/>
+                            <constraint firstAttribute="trailing" secondItem="XXF-zd-xqq" secondAttribute="trailing" id="Jdp-Lf-uv7"/>
+                            <constraint firstItem="mMj-fN-jy4" firstAttribute="top" secondItem="b3A-wX-YE9" secondAttribute="top" id="OVC-LU-wvC"/>
+                            <constraint firstItem="XXF-zd-xqq" firstAttribute="top" secondItem="b3A-wX-YE9" secondAttribute="top" id="Qml-Vt-eyr"/>
+                            <constraint firstAttribute="bottom" secondItem="mMj-fN-jy4" secondAttribute="bottom" id="Qtq-b7-AQq"/>
+                            <constraint firstItem="mMj-fN-jy4" firstAttribute="leading" secondItem="b3A-wX-YE9" secondAttribute="leading" id="Y5f-mx-rkI"/>
+                            <constraint firstAttribute="trailing" secondItem="K0q-ri-BoO" secondAttribute="trailing" constant="10" id="cip-0f-WsP"/>
+                            <constraint firstItem="K0q-ri-BoO" firstAttribute="top" secondItem="b3A-wX-YE9" secondAttribute="top" constant="10" id="gKV-ed-YGF"/>
+                            <constraint firstItem="z2H-c0-etl" firstAttribute="leading" secondItem="b3A-wX-YE9" secondAttribute="leading" constant="10" id="kf4-TD-bXr"/>
+                            <constraint firstAttribute="trailing" secondItem="mMj-fN-jy4" secondAttribute="trailing" id="pLt-p7-R5g"/>
+                            <constraint firstItem="XXF-zd-xqq" firstAttribute="leading" secondItem="b3A-wX-YE9" secondAttribute="leading" id="vrg-4e-OeA"/>
+                            <constraint firstAttribute="trailing" secondItem="z2H-c0-etl" secondAttribute="trailing" constant="10" id="wZA-Nd-YIN"/>
+                            <constraint firstAttribute="bottom" secondItem="z2H-c0-etl" secondAttribute="bottom" constant="15" id="zZr-U0-6Zu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="b3A-wX-YE9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2kb-yb-8HH"/>
+                <constraint firstAttribute="trailing" secondItem="b3A-wX-YE9" secondAttribute="trailing" id="Q92-Xc-ZjD"/>
+                <constraint firstAttribute="bottom" secondItem="b3A-wX-YE9" secondAttribute="bottom" id="SlY-rf-O2n"/>
+                <constraint firstItem="b3A-wX-YE9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V6x-zv-QhD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="200" height="203"/>
+            <connections>
+                <outlet property="containerView" destination="b3A-wX-YE9" id="aFO-mC-2dV"/>
+                <outlet property="deleteButton" destination="K0q-ri-BoO" id="Pob-el-gn2"/>
+                <outlet property="nameLabel" destination="z2H-c0-etl" id="L44-yN-1yL"/>
+                <outlet property="overlayView" destination="XXF-zd-xqq" id="xUj-2T-rIP"/>
+                <outlet property="portofolioImageView" destination="mMj-fN-jy4" id="tsU-SV-zGF"/>
+            </connections>
+            <point key="canvasLocation" x="257.60000000000002" y="194.75262368815595"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="deleteSmallWhite" width="9" height="11"/>
+    </resources>
+</document>

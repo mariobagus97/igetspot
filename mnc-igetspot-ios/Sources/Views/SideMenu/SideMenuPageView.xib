@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuPageView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="KXc-oY-Miv" id="iVQ-fc-4J7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-oY-Miv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgMenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-Bg-MGD">
+                            <rect key="frame" x="0.0" y="15" width="69" height="225"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxh-z2-Chm">
+                            <rect key="frame" x="326" y="45" width="19" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="19" id="7nf-YH-EBI"/>
+                                <constraint firstAttribute="height" constant="17" id="8Z7-rL-2z1"/>
+                            </constraints>
+                            <state key="normal" image="icHideMenu"/>
+                            <connections>
+                                <action selector="closeMenu:" destination="-1" eventType="touchUpInside" id="MVK-6N-nZ5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wmX-Bg-MGD" firstAttribute="leading" secondItem="KXc-oY-Miv" secondAttribute="leading" id="1mX-Ei-OAc"/>
+                        <constraint firstItem="wmX-Bg-MGD" firstAttribute="top" secondItem="KXc-oY-Miv" secondAttribute="top" constant="15" id="JUs-gP-kgw"/>
+                        <constraint firstItem="qxh-z2-Chm" firstAttribute="top" secondItem="ndN-zS-rXS" secondAttribute="top" constant="45" id="aal-RP-0A6"/>
+                        <constraint firstItem="ndN-zS-rXS" firstAttribute="trailing" secondItem="qxh-z2-Chm" secondAttribute="trailing" constant="30" id="eX1-a4-rm1"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="ndN-zS-rXS"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KXc-oY-Miv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="B4h-uT-79v"/>
+                <constraint firstItem="KXc-oY-Miv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GKI-L1-HiP"/>
+                <constraint firstItem="KXc-oY-Miv" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="X27-bk-YsE"/>
+                <constraint firstItem="KXc-oY-Miv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="brt-F1-FAT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="140" y="144.3778110944528"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgMenuLogo" width="69" height="225"/>
+        <image name="icHideMenu" width="19" height="17"/>
+    </resources>
+</document>

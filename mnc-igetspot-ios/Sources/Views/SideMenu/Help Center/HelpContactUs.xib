@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HelpContactUs" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="000-vA-isf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Still couldn’t find what you’re here for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-mO-46t">
+                            <rect key="frame" x="23" y="12" width="196" height="18"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWA-LT-sCJ">
+                            <rect key="frame" x="229" y="12.5" width="65.5" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="l4H-Lb-VGT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.12941176470588234" green="0.12549019607843137" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hWA-LT-sCJ" firstAttribute="leading" secondItem="qhp-mO-46t" secondAttribute="trailing" constant="10" id="Daf-7C-ajz"/>
+                        <constraint firstAttribute="bottom" secondItem="qhp-mO-46t" secondAttribute="bottom" constant="12" id="RDP-6k-gZc"/>
+                        <constraint firstItem="qhp-mO-46t" firstAttribute="leading" secondItem="000-vA-isf" secondAttribute="leading" constant="23" id="Zlt-kM-pWY"/>
+                        <constraint firstItem="qhp-mO-46t" firstAttribute="top" secondItem="000-vA-isf" secondAttribute="top" constant="12" id="dpT-eE-Abh"/>
+                        <constraint firstItem="hWA-LT-sCJ" firstAttribute="centerY" secondItem="000-vA-isf" secondAttribute="centerY" id="q3P-eU-JMD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="000-vA-isf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1lG-vM-SN8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="000-vA-isf" secondAttribute="trailing" id="A1n-54-iHL"/>
+                <constraint firstAttribute="bottom" secondItem="000-vA-isf" secondAttribute="bottom" id="KAF-L2-sg7"/>
+                <constraint firstItem="000-vA-isf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dMP-E7-gRb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contactUsLabel" destination="hWA-LT-sCJ" id="I4y-9G-d0t"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-143.92803598200899"/>
+        </view>
+    </objects>
+</document>

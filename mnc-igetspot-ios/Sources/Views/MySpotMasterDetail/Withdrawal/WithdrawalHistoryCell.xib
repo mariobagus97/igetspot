@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="WithdrawalHistoryCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment for transaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-EE-hOP">
+                        <rect key="frame" x="20" y="15" width="280" height="15"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHO220581" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="22K-RZ-QLs">
+                        <rect key="frame" x="20" y="32" width="128" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="12"/>
+                        <color key="textColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ Rp 3.000.000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mdw-Ye-HDW">
+                        <rect key="frame" x="172" y="31" width="128" height="17"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                        <color key="textColor" red="0.015686274510000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 March 2019" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-7B-Bcz">
+                        <rect key="frame" x="20" y="66.5" width="112" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: Rp 47.000.000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODF-PS-EOa">
+                        <rect key="frame" x="156" y="67" width="144" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR6-fT-Ela">
+                        <rect key="frame" x="20" y="100" width="300" height="1"/>
+                        <viewLayoutGuide key="safeArea" id="0bk-cG-LIH"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zP2-uo-BoO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GR6-fT-Ela" secondAttribute="trailing" id="0R2-LV-mus"/>
+                    <constraint firstItem="JMv-EE-hOP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="3d8-tG-Ij4"/>
+                    <constraint firstItem="g8X-7B-Bcz" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.35" id="9Zs-GC-YnS"/>
+                    <constraint firstItem="ODF-PS-EOa" firstAttribute="top" secondItem="mdw-Ye-HDW" secondAttribute="bottom" constant="19" id="APw-lH-Owg"/>
+                    <constraint firstItem="mdw-Ye-HDW" firstAttribute="top" secondItem="JMv-EE-hOP" secondAttribute="bottom" constant="1" id="CaP-JD-GqU"/>
+                    <constraint firstItem="GR6-fT-Ela" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Emc-PR-pvj"/>
+                    <constraint firstAttribute="trailing" secondItem="JMv-EE-hOP" secondAttribute="trailing" constant="20" id="IT0-Fk-M1G"/>
+                    <constraint firstItem="ODF-PS-EOa" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45" id="LCw-k3-iN4"/>
+                    <constraint firstItem="mdw-Ye-HDW" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="MP3-B8-G7Z"/>
+                    <constraint firstItem="g8X-7B-Bcz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="No7-iG-XyQ"/>
+                    <constraint firstItem="22K-RZ-QLs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SgW-Gh-bNI"/>
+                    <constraint firstItem="GR6-fT-Ela" firstAttribute="top" secondItem="ODF-PS-EOa" secondAttribute="bottom" constant="18.5" id="Tq5-Aa-qNh"/>
+                    <constraint firstAttribute="trailing" secondItem="ODF-PS-EOa" secondAttribute="trailing" constant="20" id="XU1-Jk-abW"/>
+                    <constraint firstItem="g8X-7B-Bcz" firstAttribute="top" secondItem="22K-RZ-QLs" secondAttribute="bottom" constant="20" id="YII-HP-Ee9"/>
+                    <constraint firstAttribute="bottom" secondItem="GR6-fT-Ela" secondAttribute="bottom" id="fd5-s9-crY"/>
+                    <constraint firstAttribute="trailing" secondItem="mdw-Ye-HDW" secondAttribute="trailing" constant="20" id="lHc-fm-Ylw"/>
+                    <constraint firstItem="JMv-EE-hOP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oFc-Bg-5Tq"/>
+                    <constraint firstItem="22K-RZ-QLs" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="ouo-Lk-9Uc"/>
+                    <constraint firstItem="22K-RZ-QLs" firstAttribute="top" secondItem="JMv-EE-hOP" secondAttribute="bottom" constant="2" id="wfs-IU-HXI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="g8X-7B-Bcz" id="3DM-ob-ACx"/>
+                <outlet property="idLabel" destination="22K-RZ-QLs" id="HmM-te-Q6K"/>
+                <outlet property="lastBalanceLabel" destination="ODF-PS-EOa" id="6HL-Na-os2"/>
+                <outlet property="transactionAmountLabel" destination="mdw-Ye-HDW" id="pYu-F8-aQv"/>
+                <outlet property="transactionNameLabel" destination="JMv-EE-hOP" id="5Mf-P9-drg"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="131.78410794602701"/>
+        </tableViewCell>
+    </objects>
+</document>

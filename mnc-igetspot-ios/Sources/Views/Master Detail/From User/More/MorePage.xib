@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MorePage" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ss-B4-6BD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AK5-FD-fOz">
+                            <rect key="frame" x="21" y="0.0" width="354" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-H9-V8Y">
+                                    <rect key="frame" x="0.0" y="54" width="354" height="1"/>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Enm-zt-ze8"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icReport" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-vw-Vh2">
+                                    <rect key="frame" x="0.0" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="l4j-nG-jVZ"/>
+                                        <constraint firstAttribute="height" constant="25" id="oZJ-pp-7pC"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Support or Report Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTu-qt-eKJ">
+                                    <rect key="frame" x="37" y="18" width="183.5" height="19"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="d7f-vw-Vh2" firstAttribute="leading" secondItem="AK5-FD-fOz" secondAttribute="leading" id="8Ew-Vw-ipt"/>
+                                <constraint firstItem="cn9-H9-V8Y" firstAttribute="leading" secondItem="AK5-FD-fOz" secondAttribute="leading" id="BRg-s4-hrW"/>
+                                <constraint firstAttribute="trailing" secondItem="cn9-H9-V8Y" secondAttribute="trailing" id="BVx-aq-OAC"/>
+                                <constraint firstAttribute="height" constant="55" id="R9A-yg-GDh"/>
+                                <constraint firstAttribute="bottom" secondItem="cn9-H9-V8Y" secondAttribute="bottom" id="YX5-KD-bkp"/>
+                                <constraint firstItem="d7f-vw-Vh2" firstAttribute="centerY" secondItem="UTu-qt-eKJ" secondAttribute="centerY" id="cfZ-0G-Egw"/>
+                                <constraint firstItem="UTu-qt-eKJ" firstAttribute="top" secondItem="AK5-FD-fOz" secondAttribute="top" constant="18" id="gge-zc-aAx"/>
+                                <constraint firstItem="UTu-qt-eKJ" firstAttribute="leading" secondItem="d7f-vw-Vh2" secondAttribute="trailing" constant="12" id="s7S-tn-zpi"/>
+                                <constraint firstItem="cn9-H9-V8Y" firstAttribute="top" secondItem="UTu-qt-eKJ" secondAttribute="bottom" constant="17" id="y6N-ws-xc4"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYt-DK-FHy">
+                            <rect key="frame" x="21" y="55" width="354" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4h-qA-7Ir">
+                                    <rect key="frame" x="0.0" y="54" width="354" height="1"/>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="zIQ-SC-h6U"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icBlock" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-pX-vLG">
+                                    <rect key="frame" x="0.0" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="EsT-Bc-QA5"/>
+                                        <constraint firstAttribute="width" constant="25" id="IIi-MP-Pbl"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8l-VE-8M0">
+                                    <rect key="frame" x="37" y="18" width="78" height="19"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="H4h-qA-7Ir" firstAttribute="leading" secondItem="GYt-DK-FHy" secondAttribute="leading" id="BiW-Jp-4e0"/>
+                                <constraint firstItem="H8l-VE-8M0" firstAttribute="leading" secondItem="RbM-pX-vLG" secondAttribute="trailing" constant="12" id="FXe-bJ-ag3"/>
+                                <constraint firstAttribute="height" constant="55" id="HxZ-3w-Yai"/>
+                                <constraint firstItem="H8l-VE-8M0" firstAttribute="top" secondItem="GYt-DK-FHy" secondAttribute="top" constant="18" id="WVc-gr-n4m"/>
+                                <constraint firstItem="RbM-pX-vLG" firstAttribute="centerY" secondItem="H8l-VE-8M0" secondAttribute="centerY" id="a4n-OK-fIB"/>
+                                <constraint firstAttribute="bottom" secondItem="H4h-qA-7Ir" secondAttribute="bottom" id="b5L-MZ-G3f"/>
+                                <constraint firstAttribute="trailing" secondItem="H4h-qA-7Ir" secondAttribute="trailing" id="gWl-Rb-8w5"/>
+                                <constraint firstItem="RbM-pX-vLG" firstAttribute="leading" secondItem="GYt-DK-FHy" secondAttribute="leading" id="ngW-cZ-xxh"/>
+                                <constraint firstItem="H4h-qA-7Ir" firstAttribute="top" secondItem="H8l-VE-8M0" secondAttribute="bottom" constant="17" id="ojz-ts-thx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AK5-FD-fOz" firstAttribute="top" secondItem="8ss-B4-6BD" secondAttribute="top" id="0H5-Al-mhY"/>
+                        <constraint firstAttribute="trailing" secondItem="GYt-DK-FHy" secondAttribute="trailing" id="159-IV-zqy"/>
+                        <constraint firstItem="AK5-FD-fOz" firstAttribute="leading" secondItem="8ss-B4-6BD" secondAttribute="leading" constant="21" id="Xhe-jw-cZY"/>
+                        <constraint firstItem="GYt-DK-FHy" firstAttribute="top" secondItem="AK5-FD-fOz" secondAttribute="bottom" id="icI-TA-pXW"/>
+                        <constraint firstItem="GYt-DK-FHy" firstAttribute="leading" secondItem="8ss-B4-6BD" secondAttribute="leading" constant="21" id="jTM-e1-9tb"/>
+                        <constraint firstAttribute="trailing" secondItem="AK5-FD-fOz" secondAttribute="trailing" id="u3K-vN-mak"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8ss-B4-6BD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Bz0-c7-HbL"/>
+                <constraint firstItem="8ss-B4-6BD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="YW9-DD-0EX"/>
+                <constraint firstItem="8ss-B4-6BD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dUh-of-Qy8"/>
+                <constraint firstItem="8ss-B4-6BD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r2w-aE-GuS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="blockProfileView" destination="GYt-DK-FHy" id="3ig-p1-Uer"/>
+                <outlet property="reportProfileView" destination="AK5-FD-fOz" id="umd-x6-maD"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBlock" width="20" height="20"/>
+        <image name="icReport" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewAndReportThankYouView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="backToTransactionButton" destination="TeV-75-XsD" id="jOy-MO-uGU"/>
+                <outlet property="descriptionLabel" destination="Mbm-4B-Mz8" id="N1N-us-M7c"/>
+                <outlet property="imageView" destination="SGP-Vq-1ya" id="Pcd-7x-RZj"/>
+                <outlet property="titleLabel" destination="fnT-SE-iAE" id="xQy-cb-taz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxb-Be-uOd">
+                    <rect key="frame" x="0.0" y="20" width="375" height="562"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvM-xJ-BQk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="403.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-Vq-1ya" customClass="GIFImageView" customModule="Gifu">
+                                    <rect key="frame" x="87.5" y="25" width="200" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="U9l-tw-gca"/>
+                                        <constraint firstAttribute="width" secondItem="SGP-Vq-1ya" secondAttribute="height" multiplier="1:1" id="wCH-RX-xgb"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnT-SE-iAE">
+                                    <rect key="frame" x="106.5" y="235" width="162" height="44"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="36"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you just finished a project with our Master!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbm-4B-Mz8">
+                                    <rect key="frame" x="30" y="299" width="315" height="14.5"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-75-XsD" customClass="GradientBorderButton" customModule="I_get_Spot" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="338.5" width="315" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="CJx-TZ-eg1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                    <state key="normal" title="Back to Transaction"/>
+                                    <connections>
+                                        <action selector="backToTransactionButtonDidClicked" destination="-1" eventType="touchUpInside" id="Y0I-bU-FxX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SGP-Vq-1ya" firstAttribute="centerX" secondItem="dvM-xJ-BQk" secondAttribute="centerX" id="2hn-df-Ro4"/>
+                                <constraint firstItem="fnT-SE-iAE" firstAttribute="centerX" secondItem="dvM-xJ-BQk" secondAttribute="centerX" id="9PK-i7-7gf"/>
+                                <constraint firstAttribute="bottom" secondItem="TeV-75-XsD" secondAttribute="bottom" constant="25" id="A34-Ed-W1A"/>
+                                <constraint firstItem="SGP-Vq-1ya" firstAttribute="top" secondItem="dvM-xJ-BQk" secondAttribute="top" constant="25" id="Jkb-g4-deZ"/>
+                                <constraint firstAttribute="trailing" secondItem="TeV-75-XsD" secondAttribute="trailing" constant="30" id="Qdw-9m-DkR"/>
+                                <constraint firstItem="TeV-75-XsD" firstAttribute="top" secondItem="Mbm-4B-Mz8" secondAttribute="bottom" constant="25" id="Syq-bi-sXE"/>
+                                <constraint firstAttribute="trailing" secondItem="Mbm-4B-Mz8" secondAttribute="trailing" constant="30" id="Xn3-JS-lPo"/>
+                                <constraint firstItem="TeV-75-XsD" firstAttribute="leading" secondItem="dvM-xJ-BQk" secondAttribute="leading" constant="30" id="YWg-2T-OTy"/>
+                                <constraint firstItem="fnT-SE-iAE" firstAttribute="top" secondItem="SGP-Vq-1ya" secondAttribute="bottom" constant="10" id="fM4-KX-E4l"/>
+                                <constraint firstItem="Mbm-4B-Mz8" firstAttribute="top" secondItem="fnT-SE-iAE" secondAttribute="bottom" constant="20" id="iAY-6G-c6T"/>
+                                <constraint firstItem="Mbm-4B-Mz8" firstAttribute="leading" secondItem="dvM-xJ-BQk" secondAttribute="leading" constant="30" id="she-3V-PIU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dvM-xJ-BQk" firstAttribute="leading" secondItem="bxb-Be-uOd" secondAttribute="leading" id="VLr-Z7-aTC"/>
+                        <constraint firstAttribute="trailing" secondItem="dvM-xJ-BQk" secondAttribute="trailing" id="iED-t5-z4V"/>
+                        <constraint firstAttribute="bottom" secondItem="dvM-xJ-BQk" secondAttribute="bottom" id="oi6-X2-HCm"/>
+                        <constraint firstItem="dvM-xJ-BQk" firstAttribute="top" secondItem="bxb-Be-uOd" secondAttribute="top" id="zLm-EN-YcG"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bxb-Be-uOd" secondAttribute="bottom" id="BbV-58-cQr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bxb-Be-uOd" secondAttribute="trailing" id="Png-HN-D03"/>
+                <constraint firstItem="dvM-xJ-BQk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="eB8-td-J6T"/>
+                <constraint firstItem="bxb-Be-uOd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pPl-Po-JJd"/>
+                <constraint firstItem="bxb-Be-uOd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="v1v-SG-Vam"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="166.41679160419793"/>
+        </view>
+    </objects>
+</document>

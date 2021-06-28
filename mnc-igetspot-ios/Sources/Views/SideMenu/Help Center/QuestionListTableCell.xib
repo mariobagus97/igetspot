@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuestionListTableCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-pr-xhS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can a user be a customer and a Spot Master with the same account?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-D7-BBr">
+                            <rect key="frame" x="23" y="18" width="325" height="119"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhA-yA-EVH">
+                            <rect key="frame" x="21" y="154" width="354" height="2"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="orR-RW-Hi5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZhA-yA-EVH" firstAttribute="leading" secondItem="BMK-pr-xhS" secondAttribute="leading" constant="21" id="7Tk-eu-PZc"/>
+                        <constraint firstItem="hMl-D7-BBr" firstAttribute="top" secondItem="BMK-pr-xhS" secondAttribute="top" constant="18" id="VGE-3g-3uL"/>
+                        <constraint firstAttribute="trailing" secondItem="hMl-D7-BBr" secondAttribute="trailing" constant="27" id="d0b-cY-uUz"/>
+                        <constraint firstItem="hMl-D7-BBr" firstAttribute="leading" secondItem="BMK-pr-xhS" secondAttribute="leading" constant="23" id="g6r-XA-JWG"/>
+                        <constraint firstAttribute="bottom" secondItem="ZhA-yA-EVH" secondAttribute="bottom" id="gGS-v8-lS4"/>
+                        <constraint firstItem="ZhA-yA-EVH" firstAttribute="top" secondItem="hMl-D7-BBr" secondAttribute="bottom" constant="17" id="hQ7-pI-gy4"/>
+                        <constraint firstAttribute="trailing" secondItem="ZhA-yA-EVH" secondAttribute="trailing" id="lUn-vc-DIW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BMK-pr-xhS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7gH-hh-SXu"/>
+                <constraint firstItem="BMK-pr-xhS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BXb-H0-3RA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BMK-pr-xhS" secondAttribute="trailing" id="VAQ-jn-wHB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BMK-pr-xhS" secondAttribute="bottom" id="lia-Vc-vbO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="questionLabel" destination="hMl-D7-BBr" id="T48-Ce-GCh"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-75.562218890554732"/>
+        </view>
+    </objects>
+</document>

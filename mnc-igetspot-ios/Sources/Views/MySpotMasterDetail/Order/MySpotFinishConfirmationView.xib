@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySpotFinishConfirmationView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="backToOrderButton" destination="muX-VS-anu" id="DAa-fx-rhy"/>
+                <outlet property="descriptionLabel" destination="ETu-fm-Lqv" id="rTd-Ke-xID"/>
+                <outlet property="iconImageView" destination="WLa-Ve-YY0" id="78M-mi-NG1"/>
+                <outlet property="titleLabel" destination="wId-Ez-Uta" id="1ex-6B-wKO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aoq-gG-WVd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-li-wxi">
+                    <rect key="frame" x="0.0" y="20" width="375" height="562"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-4h-90M">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finishOrder" translatesAutoresizingMaskIntoConstraints="NO" id="WLa-Ve-YY0">
+                                    <rect key="frame" x="75" y="25" width="225" height="175"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="175" id="Vtp-0i-bnc"/>
+                                        <constraint firstAttribute="width" constant="225" id="vlZ-ut-oPb"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Did It!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wId-Ez-Uta">
+                                    <rect key="frame" x="108.5" y="210" width="158" height="44"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="36"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask your client to review your creative service" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-SH-rGL">
+                                    <rect key="frame" x="30" y="274" width="315" height="14.5"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETu-fm-Lqv">
+                                    <rect key="frame" x="30" y="308.5" width="315" height="43.5"/>
+                                    <string key="text">Transaction amount will be transferred to your balance once you get the review, or automatically 2 days after the order is marked as finished. </string>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muX-VS-anu" customClass="GradientBorderButton" customModule="I_get_Spot" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="377" width="315" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="j3H-2b-chK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                    <state key="normal" title="Back To My Orders"/>
+                                    <connections>
+                                        <action selector="backToOrderButtonDidClicked" destination="-1" eventType="touchUpInside" id="5d0-JB-luL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ETu-fm-Lqv" firstAttribute="leading" secondItem="2xg-4h-90M" secondAttribute="leading" constant="30" id="35m-jF-Mak"/>
+                                <constraint firstItem="WLa-Ve-YY0" firstAttribute="centerX" secondItem="2xg-4h-90M" secondAttribute="centerX" id="A5p-6Y-9sZ"/>
+                                <constraint firstItem="4qa-SH-rGL" firstAttribute="top" secondItem="wId-Ez-Uta" secondAttribute="bottom" constant="20" id="Bcp-4Y-nH4"/>
+                                <constraint firstItem="wId-Ez-Uta" firstAttribute="top" secondItem="WLa-Ve-YY0" secondAttribute="bottom" constant="10" id="HJ7-Hn-z4g"/>
+                                <constraint firstAttribute="trailing" secondItem="ETu-fm-Lqv" secondAttribute="trailing" constant="30" id="HR7-Th-dCy"/>
+                                <constraint firstAttribute="trailing" secondItem="4qa-SH-rGL" secondAttribute="trailing" constant="30" id="OVo-MC-YEM"/>
+                                <constraint firstAttribute="bottom" secondItem="muX-VS-anu" secondAttribute="bottom" constant="25" id="Uq4-CY-rOy"/>
+                                <constraint firstItem="wId-Ez-Uta" firstAttribute="centerX" secondItem="2xg-4h-90M" secondAttribute="centerX" id="Wzo-H1-B0t"/>
+                                <constraint firstItem="ETu-fm-Lqv" firstAttribute="top" secondItem="4qa-SH-rGL" secondAttribute="bottom" constant="20" id="brH-am-hBV"/>
+                                <constraint firstItem="muX-VS-anu" firstAttribute="leading" secondItem="2xg-4h-90M" secondAttribute="leading" constant="30" id="fex-bF-2ax"/>
+                                <constraint firstItem="4qa-SH-rGL" firstAttribute="leading" secondItem="2xg-4h-90M" secondAttribute="leading" constant="30" id="kPb-cG-tki"/>
+                                <constraint firstItem="muX-VS-anu" firstAttribute="top" secondItem="ETu-fm-Lqv" secondAttribute="bottom" constant="25" id="l8P-ed-KVb"/>
+                                <constraint firstAttribute="trailing" secondItem="muX-VS-anu" secondAttribute="trailing" constant="30" id="rDs-Qk-b0N"/>
+                                <constraint firstItem="WLa-Ve-YY0" firstAttribute="top" secondItem="2xg-4h-90M" secondAttribute="top" constant="25" id="rIf-GF-M15"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2xg-4h-90M" firstAttribute="top" secondItem="kpp-li-wxi" secondAttribute="top" id="4oz-PA-tGA"/>
+                        <constraint firstItem="2xg-4h-90M" firstAttribute="leading" secondItem="kpp-li-wxi" secondAttribute="leading" id="Jof-My-0ai"/>
+                        <constraint firstAttribute="trailing" secondItem="2xg-4h-90M" secondAttribute="trailing" id="gvD-my-R5r"/>
+                        <constraint firstAttribute="bottom" secondItem="2xg-4h-90M" secondAttribute="bottom" id="kYB-1t-AN4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gtq-G5-60I" firstAttribute="trailing" secondItem="kpp-li-wxi" secondAttribute="trailing" id="2J8-O0-lk8"/>
+                <constraint firstItem="2xg-4h-90M" firstAttribute="width" secondItem="aoq-gG-WVd" secondAttribute="width" id="34O-vC-3Bu"/>
+                <constraint firstItem="gtq-G5-60I" firstAttribute="bottom" secondItem="kpp-li-wxi" secondAttribute="bottom" id="NP5-qh-1i8"/>
+                <constraint firstItem="kpp-li-wxi" firstAttribute="top" secondItem="gtq-G5-60I" secondAttribute="top" id="U7A-Tu-r3T"/>
+                <constraint firstItem="kpp-li-wxi" firstAttribute="leading" secondItem="gtq-G5-60I" secondAttribute="leading" id="shn-9Y-Byj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="gtq-G5-60I"/>
+            <point key="canvasLocation" x="138.40000000000001" y="166.41679160419793"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="finishOrder" width="259.5" height="256"/>
+    </resources>
+</document>

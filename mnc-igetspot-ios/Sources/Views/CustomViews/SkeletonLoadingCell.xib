@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="SkeletonLoadingCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-BQ-OAh">
+                        <rect key="frame" x="20" y="20" width="279" height="32.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zed-WB-swI">
+                        <rect key="frame" x="20" y="67.5" width="195.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-qC-Myj">
+                        <rect key="frame" x="20" y="99.5" width="139.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r3W-BQ-OAh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="25Q-1F-82m"/>
+                    <constraint firstItem="EOm-qC-Myj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6rP-aa-0fo"/>
+                    <constraint firstAttribute="bottom" secondItem="EOm-qC-Myj" secondAttribute="bottom" constant="20" id="AdZ-Ui-p4J"/>
+                    <constraint firstItem="Zed-WB-swI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="B4k-LY-Z1a"/>
+                    <constraint firstItem="Zed-WB-swI" firstAttribute="width" secondItem="r3W-BQ-OAh" secondAttribute="width" multiplier="0.7" id="Qm3-Fo-5zr"/>
+                    <constraint firstItem="EOm-qC-Myj" firstAttribute="top" secondItem="Zed-WB-swI" secondAttribute="bottom" constant="15" id="YWw-Q0-2y1"/>
+                    <constraint firstItem="EOm-qC-Myj" firstAttribute="width" secondItem="r3W-BQ-OAh" secondAttribute="width" multiplier="0.5" id="ZdF-1g-hIE"/>
+                    <constraint firstItem="r3W-BQ-OAh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="idY-Wi-IPU"/>
+                    <constraint firstAttribute="trailing" secondItem="r3W-BQ-OAh" secondAttribute="trailing" constant="20" id="m9K-MO-WBj"/>
+                    <constraint firstItem="Zed-WB-swI" firstAttribute="top" secondItem="r3W-BQ-OAh" secondAttribute="bottom" constant="15" id="z0S-Zg-xj0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="loadingXLabel" destination="r3W-BQ-OAh" id="J2h-pN-eHa"/>
+                <outlet property="loadingYLabel" destination="Zed-WB-swI" id="KKB-gR-aKe"/>
+                <outlet property="loadingZLabel" destination="EOm-qC-Myj" id="SMG-8q-799"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="182.15892053973016"/>
+        </tableViewCell>
+    </objects>
+</document>

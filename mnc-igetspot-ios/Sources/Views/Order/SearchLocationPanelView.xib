@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchLocationPanelView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="igX-ap-0Rk" id="CLt-FJ-jYu"/>
+                <outlet property="tableView" destination="ga3-XE-nnr" id="PDi-uN-19O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinLocationColor" translatesAutoresizingMaskIntoConstraints="NO" id="owS-G4-asS">
+                    <rect key="frame" x="15" y="43" width="14" height="20"/>
+                </imageView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="igX-ap-0Rk">
+                    <rect key="frame" x="39" y="25" width="316" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srE-oK-XdL">
+                    <rect key="frame" x="0.0" y="86" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KCS-6t-LfH"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ga3-XE-nnr">
+                    <rect key="frame" x="0.0" y="87" width="375" height="580"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="owS-G4-asS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="0ln-TT-mrV"/>
+                <constraint firstItem="owS-G4-asS" firstAttribute="centerY" secondItem="igX-ap-0Rk" secondAttribute="centerY" id="AMr-U8-nIq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="igX-ap-0Rk" secondAttribute="trailing" constant="20" id="Fcz-ep-Wr8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ga3-XE-nnr" secondAttribute="bottom" id="IMF-9B-jDe"/>
+                <constraint firstItem="srE-oK-XdL" firstAttribute="top" secondItem="igX-ap-0Rk" secondAttribute="bottom" constant="5" id="Jrf-AN-5ia"/>
+                <constraint firstAttribute="trailing" secondItem="srE-oK-XdL" secondAttribute="trailing" id="UeO-VX-8rJ"/>
+                <constraint firstItem="srE-oK-XdL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UhL-EQ-pdn"/>
+                <constraint firstItem="igX-ap-0Rk" firstAttribute="leading" secondItem="owS-G4-asS" secondAttribute="trailing" constant="10" id="eyG-rx-Vs8"/>
+                <constraint firstItem="ga3-XE-nnr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fGf-4L-zew"/>
+                <constraint firstItem="igX-ap-0Rk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="hih-lO-DNt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ga3-XE-nnr" secondAttribute="trailing" id="olY-TD-18x"/>
+                <constraint firstItem="ga3-XE-nnr" firstAttribute="top" secondItem="srE-oK-XdL" secondAttribute="bottom" id="raq-u9-Qrr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="142.57871064467767"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pinLocationColor" width="14" height="20"/>
+    </resources>
+</document>

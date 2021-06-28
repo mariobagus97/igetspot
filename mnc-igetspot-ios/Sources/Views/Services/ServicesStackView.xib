@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ServicesStackView" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfx-1Y-77s" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yhI-tm-f0K">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yhI-tm-f0K" secondAttribute="trailing" id="6WL-PS-H5V"/>
+                        <constraint firstItem="yhI-tm-f0K" firstAttribute="centerX" secondItem="Rfx-1Y-77s" secondAttribute="centerX" id="aU2-Es-DlF"/>
+                        <constraint firstItem="yhI-tm-f0K" firstAttribute="top" secondItem="Rfx-1Y-77s" secondAttribute="top" id="eDr-Pe-LEW"/>
+                        <constraint firstItem="yhI-tm-f0K" firstAttribute="leading" secondItem="Rfx-1Y-77s" secondAttribute="leading" id="mI1-nD-QEr"/>
+                        <constraint firstAttribute="bottom" secondItem="yhI-tm-f0K" secondAttribute="bottom" id="pwP-pU-pqW"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="LkN-ee-6CM"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rfx-1Y-77s" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Ic-BS-ZDA"/>
+                <constraint firstItem="Rfx-1Y-77s" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bQf-H7-6YC"/>
+                <constraint firstItem="Rfx-1Y-77s" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="c0T-3r-ePW"/>
+                <constraint firstItem="Rfx-1Y-77s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fRw-PL-e64"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="servicesStack" destination="yhI-tm-f0K" id="Fgt-2b-xcL"/>
+            </connections>
+        </view>
+    </objects>
+</document>

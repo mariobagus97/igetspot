@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingPanelHeaderView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="xLb-jf-FiJ" id="FYF-1D-w7q"/>
+                <outlet property="horizontalSpacingIconAndTitleConstraint" destination="cqE-lq-MWQ" id="uoO-Qg-XSd"/>
+                <outlet property="iconImageView" destination="nr1-bc-asz" id="T0x-TJ-Xe5"/>
+                <outlet property="titleLabel" destination="e6d-Rn-Ksk" id="1Mo-20-6Sn"/>
+                <outlet property="widthIconConstraint" destination="Swd-2C-EL5" id="6LE-1Q-ZiR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blp-oG-mam">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cba-gb-LY5">
+                            <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="1FK-Mo-s77"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deleteColorSmall" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-bc-asz">
+                            <rect key="frame" x="25" y="12.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="L6o-y9-ZWx"/>
+                                <constraint firstAttribute="width" constant="35" id="Swd-2C-EL5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-Rn-Ksk">
+                            <rect key="frame" x="60" y="20" width="132.5" height="20"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLb-jf-FiJ">
+                            <rect key="frame" x="325" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Rvo-S2-x2g"/>
+                                <constraint firstAttribute="height" constant="30" id="SnE-Mb-aWZ"/>
+                            </constraints>
+                            <state key="normal" image="closeBlack"/>
+                            <connections>
+                                <action selector="closeButtonDidClicked" destination="-1" eventType="touchUpInside" id="8cI-2A-aeH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nr1-bc-asz" firstAttribute="leading" secondItem="4dE-b4-cas" secondAttribute="leading" constant="25" id="4Bf-8L-RbW"/>
+                        <constraint firstAttribute="trailing" secondItem="Cba-gb-LY5" secondAttribute="trailing" id="9Zf-4B-zpk"/>
+                        <constraint firstAttribute="trailing" secondItem="xLb-jf-FiJ" secondAttribute="trailing" constant="20" id="AXs-Pg-LXj"/>
+                        <constraint firstAttribute="bottom" secondItem="Cba-gb-LY5" secondAttribute="bottom" id="E31-fH-jag"/>
+                        <constraint firstItem="Cba-gb-LY5" firstAttribute="leading" secondItem="blp-oG-mam" secondAttribute="leading" id="F4q-GG-2WV"/>
+                        <constraint firstItem="e6d-Rn-Ksk" firstAttribute="centerY" secondItem="blp-oG-mam" secondAttribute="centerY" id="bY3-W7-gex"/>
+                        <constraint firstItem="e6d-Rn-Ksk" firstAttribute="leading" secondItem="nr1-bc-asz" secondAttribute="trailing" id="cqE-lq-MWQ"/>
+                        <constraint firstItem="nr1-bc-asz" firstAttribute="centerY" secondItem="e6d-Rn-Ksk" secondAttribute="centerY" id="s3z-3D-SQX"/>
+                        <constraint firstItem="xLb-jf-FiJ" firstAttribute="centerY" secondItem="blp-oG-mam" secondAttribute="centerY" id="sbd-O6-tLp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="4dE-b4-cas"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="blp-oG-mam" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7Mv-Q0-sJH"/>
+                <constraint firstItem="blp-oG-mam" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Oyb-uV-q5Q"/>
+                <constraint firstAttribute="bottom" secondItem="blp-oG-mam" secondAttribute="bottom" id="mMv-s2-LqT"/>
+                <constraint firstItem="blp-oG-mam" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vp8-Of-a0N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="336.43178410794604"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeBlack" width="21" height="21"/>
+        <image name="deleteColorSmall" width="16" height="20"/>
+    </resources>
+</document>

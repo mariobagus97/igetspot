@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ZZQ-CH-6Je"/>
+                <outlet property="descLabel" destination="YR6-Re-XS4" id="zB9-2V-ipN"/>
+                <outlet property="tryAgainButton" destination="tET-iQ-XQ1" id="b5Y-wg-kql"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="494"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ooops, something went wrong, please try again later" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR6-Re-XS4">
+                    <rect key="frame" x="20" y="203" width="345" height="48"/>
+                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tET-iQ-XQ1">
+                    <rect key="frame" x="132.5" y="271" width="120" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9Gh-Wp-Uyj"/>
+                        <constraint firstAttribute="width" constant="120" id="CFH-d1-q4Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                    <state key="normal" title="Try Again">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tryAgainButtonDidClicked" destination="-1" eventType="touchUpInside" id="3tY-hv-wPP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YR6-Re-XS4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3ma-hq-o5g"/>
+                <constraint firstItem="YR6-Re-XS4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-30" id="7Wa-fO-j1R"/>
+                <constraint firstItem="tET-iQ-XQ1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="YDL-q8-Hdq"/>
+                <constraint firstAttribute="trailing" secondItem="YR6-Re-XS4" secondAttribute="trailing" constant="20" id="dGY-SC-RHi"/>
+                <constraint firstItem="tET-iQ-XQ1" firstAttribute="top" secondItem="YR6-Re-XS4" secondAttribute="bottom" constant="20" id="ylr-XB-gnU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="146.40000000000001" y="214.99250374812596"/>
+        </view>
+    </objects>
+</document>

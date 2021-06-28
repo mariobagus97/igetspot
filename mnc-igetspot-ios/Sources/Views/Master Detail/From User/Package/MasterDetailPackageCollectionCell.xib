@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Bold.otf">
+            <string>Barlow-Bold</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MasterDetailPackageCollectionCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8M-BX-Ksk">
+                    <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ikI-wj-HpZ">
+                            <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdX-ga-z0r">
+                            <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="safeArea" id="yxy-bd-vVu"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Concert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="UO7-e3-oOe">
+                            <rect key="frame" x="10" y="109.5" width="134" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp. 5000 K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="63u-Zp-H4F">
+                            <rect key="frame" x="10" y="129" width="134" height="15"/>
+                            <fontDescription key="fontDescription" name="Barlow-Bold" family="Barlow" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ikI-wj-HpZ" secondAttribute="trailing" id="4zc-So-780"/>
+                        <constraint firstAttribute="trailing" secondItem="UO7-e3-oOe" secondAttribute="trailing" constant="10" id="9ed-TD-82V"/>
+                        <constraint firstItem="ZdX-ga-z0r" firstAttribute="top" secondItem="a8M-BX-Ksk" secondAttribute="top" id="BAe-XU-MCo"/>
+                        <constraint firstAttribute="trailing" secondItem="ZdX-ga-z0r" secondAttribute="trailing" id="J2s-cX-dRs"/>
+                        <constraint firstAttribute="bottom" secondItem="ZdX-ga-z0r" secondAttribute="bottom" id="N8Q-xP-Xkd"/>
+                        <constraint firstItem="63u-Zp-H4F" firstAttribute="top" secondItem="UO7-e3-oOe" secondAttribute="bottom" constant="5" id="NPG-dV-yYD"/>
+                        <constraint firstItem="ikI-wj-HpZ" firstAttribute="leading" secondItem="a8M-BX-Ksk" secondAttribute="leading" id="Sbq-mQ-HTH"/>
+                        <constraint firstAttribute="bottom" secondItem="63u-Zp-H4F" secondAttribute="bottom" constant="10" id="W3A-nZ-8sF"/>
+                        <constraint firstItem="ZdX-ga-z0r" firstAttribute="leading" secondItem="a8M-BX-Ksk" secondAttribute="leading" id="e9M-U0-Rwt"/>
+                        <constraint firstItem="63u-Zp-H4F" firstAttribute="leading" secondItem="a8M-BX-Ksk" secondAttribute="leading" constant="10" id="kiv-Zi-eOv"/>
+                        <constraint firstItem="ikI-wj-HpZ" firstAttribute="top" secondItem="a8M-BX-Ksk" secondAttribute="top" id="ntC-b0-SMQ"/>
+                        <constraint firstAttribute="bottom" secondItem="ikI-wj-HpZ" secondAttribute="bottom" id="ouj-zY-1hh"/>
+                        <constraint firstItem="UO7-e3-oOe" firstAttribute="leading" secondItem="a8M-BX-Ksk" secondAttribute="leading" constant="10" id="sm1-Re-IxM"/>
+                        <constraint firstAttribute="trailing" secondItem="63u-Zp-H4F" secondAttribute="trailing" constant="10" id="wpe-BV-FFA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a8M-BX-Ksk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2Od-ZC-u9B"/>
+                <constraint firstAttribute="bottom" secondItem="a8M-BX-Ksk" secondAttribute="bottom" id="aPt-vy-6gG"/>
+                <constraint firstAttribute="trailing" secondItem="a8M-BX-Ksk" secondAttribute="trailing" id="oOE-bb-0TC"/>
+                <constraint firstItem="a8M-BX-Ksk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uTO-cp-vK4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="a8M-BX-Ksk" id="sOj-qX-Ocf"/>
+                <outlet property="overlayView" destination="ZdX-ga-z0r" id="bBg-Pa-Yci"/>
+                <outlet property="packageImageView" destination="ikI-wj-HpZ" id="ZLP-Fb-Huf"/>
+                <outlet property="packageNameLabel" destination="UO7-e3-oOe" id="lVt-7U-dKz"/>
+                <outlet property="packagePriceLabel" destination="63u-Zp-H4F" id="6PY-Q1-Ttt"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="-174"/>
+        </view>
+    </objects>
+</document>

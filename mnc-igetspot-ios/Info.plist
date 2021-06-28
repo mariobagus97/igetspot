@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC62trBgaMY3wXX181D6oMHTRIu1Kzgpcw</string>
+	<key>BUNDLE_ID</key>
+	<string>id.mncdigital.igetspot</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>I get Spot</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb679783415765696</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.942132940890-5d0bunvqqes94t0e3gr7822qm8b95fqc</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CLIENT_ID</key>
+	<string>942132940890-5d0bunvqqes94t0e3gr7822qm8b95fqc.apps.googleusercontent.com</string>
+	<key>DATABASE_URL</key>
+	<string>https://igetspot-214012.firebaseio.com</string>
+	<key>FacebookAppID</key>
+	<string>679783415765696</string>
+	<key>FacebookDisplayName</key>
+	<string>i get Spot</string>
+	<key>GCM_SENDER_ID</key>
+	<string>942132940890</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:942132940890:ios:c18d4e3b961ac4a8</string>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>instagram</string>
+		<string>fb</string>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string> $(PRODUCT_NAME) use camera for taking image to be shared</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string> $(PRODUCT_NAME) needs for sharing location</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>photos add description.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string> $(PRODUCT_NAME) needs Photos for getting images to be shared</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>PROJECT_ID</key>
+	<string>igetspot-214012</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.942132940890-5d0bunvqqes94t0e3gr7822qm8b95fqc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>igetspot-214012.appspot.com</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AvenirLTStd-Medium.otf</string>
+		<string>Barlow-Bold.otf</string>
+		<string>Barlow-Regular.otf</string>
+		<string>Barlow-Medium.otf</string>
+		<string>Quando-Regular.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

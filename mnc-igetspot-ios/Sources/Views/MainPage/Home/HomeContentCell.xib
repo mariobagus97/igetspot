@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Bold.otf">
+            <string>Barlow-Bold</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="610" id="KGk-i7-Jjw" customClass="HomeContentCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="610"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1c-s5-IrS" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="609.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UId-ru-Ut2">
+                        <rect key="frame" x="20" y="158" width="232" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Barlow-Bold" family="Barlow" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl9-Y0-MXv">
+                        <rect key="frame" x="264.5" y="167" width="33.5" height="17"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XK-1x-dhp" customClass="FSPageControl" customModule="FSPagerView">
+                        <rect key="frame" x="110" y="196" width="100" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="xnJ-Uy-87R"/>
+                            <constraint firstAttribute="height" constant="20" id="xxE-xM-ayY"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="HomeBlogCellIdentifier" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WB-DP-s2g">
+                        <rect key="frame" x="0.0" y="220" width="320" height="350"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="350" id="Q7F-SH-v9r"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qqf-Eg-jCz">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-Hc-pwq">
+                        <rect key="frame" x="0.0" y="549.5" width="320" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="AZW-IV-XG4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3WB-DP-s2g" secondAttribute="bottom" constant="39.5" id="5WL-m0-4vy"/>
+                    <constraint firstItem="3WB-DP-s2g" firstAttribute="top" secondItem="6XK-1x-dhp" secondAttribute="bottom" constant="4" id="81h-cv-zT3"/>
+                    <constraint firstAttribute="trailing" secondItem="3WB-DP-s2g" secondAttribute="trailing" id="BV9-Ym-HwF"/>
+                    <constraint firstAttribute="bottom" secondItem="U9T-Hc-pwq" secondAttribute="bottom" constant="-20" id="H6J-Fv-j56"/>
+                    <constraint firstItem="U9T-Hc-pwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jwc-N8-F7w"/>
+                    <constraint firstItem="3WB-DP-s2g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="220" id="O3r-ww-8an"/>
+                    <constraint firstItem="6XK-1x-dhp" firstAttribute="top" secondItem="Vl9-Y0-MXv" secondAttribute="bottom" constant="12" id="Rhh-vs-7x3"/>
+                    <constraint firstAttribute="trailing" secondItem="UId-ru-Ut2" secondAttribute="trailing" constant="68" id="TcX-cD-kRn"/>
+                    <constraint firstItem="UId-ru-Ut2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cca-pN-0XI"/>
+                    <constraint firstAttribute="trailing" secondItem="U9T-Hc-pwq" secondAttribute="trailing" id="dHT-aR-zVO"/>
+                    <constraint firstItem="6XK-1x-dhp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eBY-I9-pjF"/>
+                    <constraint firstItem="3WB-DP-s2g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lGc-6a-3lQ"/>
+                    <constraint firstItem="P1c-s5-IrS" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="nMW-ON-hiW"/>
+                    <constraint firstItem="Vl9-Y0-MXv" firstAttribute="top" secondItem="UId-ru-Ut2" secondAttribute="bottom" constant="9" id="seC-Re-8VH"/>
+                    <constraint firstItem="P1c-s5-IrS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tlT-rY-Rni"/>
+                    <constraint firstItem="P1c-s5-IrS" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="xWM-Hf-Rra"/>
+                    <constraint firstAttribute="trailing" secondItem="Vl9-Y0-MXv" secondAttribute="trailing" constant="22" id="zQ6-2V-NW4"/>
+                    <constraint firstItem="P1c-s5-IrS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zfb-3y-V0E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1Nx-7w-fln"/>
+            <connections>
+                <outlet property="blogtitle" destination="UId-ru-Ut2" id="eYq-qm-3A4"/>
+                <outlet property="blogwriter" destination="Vl9-Y0-MXv" id="vrb-rT-0GA"/>
+                <outlet property="collectionView" destination="3WB-DP-s2g" id="vmN-n1-hu6"/>
+                <outlet property="heightCollectionViewConstraint" destination="Q7F-SH-v9r" id="dNa-75-Okp"/>
+                <outlet property="pageControl" destination="6XK-1x-dhp" id="bNK-7s-qWO"/>
+                <outlet property="pagerView" destination="P1c-s5-IrS" id="ZM6-ew-Gzb"/>
+            </connections>
+            <point key="canvasLocation" x="158.40000000000001" y="217.69115442278863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="wave" width="375" height="82"/>
+    </resources>
+</document>

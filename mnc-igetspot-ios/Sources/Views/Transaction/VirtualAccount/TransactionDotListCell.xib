@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TransactionDotListCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMM-Jd-wxH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-Lx-8gG" customClass="CornerRoundingView" customModule="SwiftMessages">
+                            <rect key="frame" x="20" y="68.5" width="8" height="8"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="GSQ-ce-DsP"/>
+                                <constraint firstAttribute="width" constant="8" id="KJc-R9-p6a"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="roundsLeadingCorners" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D92-Da-c8a">
+                            <rect key="frame" x="48" y="0.0" width="260" height="131"/>
+                            <string key="text">Punya pertanyaan? 
+Kamu bisa menghubungi i Get Spot dengan 
+mengirimkan email ke</string>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="D92-Da-c8a" secondAttribute="trailing" constant="67" id="6k4-03-lYD"/>
+                        <constraint firstItem="D92-Da-c8a" firstAttribute="top" secondItem="RMM-Jd-wxH" secondAttribute="top" id="Jaz-dA-WLB"/>
+                        <constraint firstItem="BDZ-Lx-8gG" firstAttribute="centerY" secondItem="RMM-Jd-wxH" secondAttribute="centerY" id="MAW-oI-9xN"/>
+                        <constraint firstItem="D92-Da-c8a" firstAttribute="leading" secondItem="BDZ-Lx-8gG" secondAttribute="trailing" constant="20" id="heg-4G-IJ4"/>
+                        <constraint firstItem="BDZ-Lx-8gG" firstAttribute="leading" secondItem="RMM-Jd-wxH" secondAttribute="leading" constant="20" id="mjl-9d-gYQ"/>
+                        <constraint firstAttribute="bottom" secondItem="D92-Da-c8a" secondAttribute="bottom" constant="14" id="vkD-ld-NMK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RMM-Jd-wxH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Izn-0V-Aio"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RMM-Jd-wxH" secondAttribute="trailing" id="X06-10-3u7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RMM-Jd-wxH" secondAttribute="bottom" id="jWz-oQ-jJi"/>
+                <constraint firstItem="RMM-Jd-wxH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pEW-5x-Pq6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="csLabel" destination="D92-Da-c8a" id="a33-wu-VsT"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-97.601199400299862"/>
+        </view>
+    </objects>
+</document>

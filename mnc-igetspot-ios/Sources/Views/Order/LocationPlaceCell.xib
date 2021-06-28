@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="LocationPlaceCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationTimeGray" translatesAutoresizingMaskIntoConstraints="NO" id="dTC-8e-fia">
+                        <rect key="frame" x="30" y="24" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="A5j-xY-pKP"/>
+                            <constraint firstAttribute="width" constant="20" id="EwF-du-UAj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-cz-xdl">
+                        <rect key="frame" x="65" y="14" width="225" height="33.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIW-sT-Bwp">
+                        <rect key="frame" x="65" y="52.5" width="225" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VIW-sT-Bwp" firstAttribute="leading" secondItem="dTC-8e-fia" secondAttribute="trailing" constant="15" id="4YO-9u-hAx"/>
+                    <constraint firstItem="dTC-8e-fia" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="8s5-C0-eqR"/>
+                    <constraint firstItem="Jpz-cz-xdl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="CHg-LZ-x45"/>
+                    <constraint firstItem="dTC-8e-fia" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G0z-wB-qkp"/>
+                    <constraint firstItem="VIW-sT-Bwp" firstAttribute="top" secondItem="Jpz-cz-xdl" secondAttribute="bottom" constant="5" id="I4x-Uc-o2b"/>
+                    <constraint firstAttribute="trailing" secondItem="Jpz-cz-xdl" secondAttribute="trailing" constant="30" id="dr5-Y2-tYG"/>
+                    <constraint firstItem="Jpz-cz-xdl" firstAttribute="leading" secondItem="dTC-8e-fia" secondAttribute="trailing" constant="15" id="jBk-au-auR"/>
+                    <constraint firstAttribute="trailing" secondItem="VIW-sT-Bwp" secondAttribute="trailing" constant="30" id="kSl-HX-six"/>
+                    <constraint firstAttribute="bottom" secondItem="VIW-sT-Bwp" secondAttribute="bottom" constant="15" id="pg6-vq-Prj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImageView" destination="dTC-8e-fia" id="w5v-nx-hE4"/>
+                <outlet property="subTitleLabel" destination="VIW-sT-Bwp" id="tfr-iA-H3K"/>
+                <outlet property="titleLabel" destination="Jpz-cz-xdl" id="gpk-e1-Zt9"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="152.92353823088456"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="locationTimeGray" width="20" height="20"/>
+    </resources>
+</document>

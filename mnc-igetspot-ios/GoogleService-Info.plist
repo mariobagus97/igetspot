@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>942132940890-5d0bunvqqes94t0e3gr7822qm8b95fqc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.942132940890-5d0bunvqqes94t0e3gr7822qm8b95fqc</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>942132940890-7p7nim8nghsm7a4f3m2kqhf4doeqljir.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC62trBgaMY3wXX181D6oMHTRIu1Kzgpcw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>942132940890</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>id.mncdigital.igetspot</string>
+	<key>PROJECT_ID</key>
+	<string>igetspot-214012</string>
+	<key>STORAGE_BUCKET</key>
+	<string>igetspot-214012.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:942132940890:ios:c18d4e3b961ac4a8</string>
+	<key>DATABASE_URL</key>
+	<string>https://igetspot-214012.firebaseio.com</string>
+</dict>
+</plist>

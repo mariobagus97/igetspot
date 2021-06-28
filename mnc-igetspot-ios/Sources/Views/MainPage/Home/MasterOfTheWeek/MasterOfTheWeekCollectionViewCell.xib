@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MasterOfTheWeekCollectionViewCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKo-Dr-mqc">
+                    <rect key="frame" x="10" y="0.0" width="310" height="130"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-UT-lm3">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1p5-Md-Vqs">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="safeArea" id="tVJ-yO-qn4"/>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kurt Cobain" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl5-mA-DqU">
+                            <rect key="frame" x="13" y="78.5" width="284" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musician" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6G-qY-Fo8">
+                            <rect key="frame" x="15" y="104" width="280" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="k9T-0M-m1z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1p5-Md-Vqs" secondAttribute="bottom" id="BUU-5d-AH4"/>
+                        <constraint firstItem="0jF-UT-lm3" firstAttribute="top" secondItem="VKo-Dr-mqc" secondAttribute="top" id="GHf-yt-vW9"/>
+                        <constraint firstAttribute="bottom" secondItem="i6G-qY-Fo8" secondAttribute="bottom" constant="10" id="MDi-xu-Ucv"/>
+                        <constraint firstAttribute="trailing" secondItem="1p5-Md-Vqs" secondAttribute="trailing" id="R0T-rg-XBD"/>
+                        <constraint firstAttribute="trailing" secondItem="sl5-mA-DqU" secondAttribute="trailing" constant="13" id="VXg-99-MRe"/>
+                        <constraint firstItem="0jF-UT-lm3" firstAttribute="leading" secondItem="VKo-Dr-mqc" secondAttribute="leading" id="XBQ-ZZ-9nF"/>
+                        <constraint firstItem="i6G-qY-Fo8" firstAttribute="leading" secondItem="VKo-Dr-mqc" secondAttribute="leading" constant="15" id="XcG-cG-6bi"/>
+                        <constraint firstAttribute="trailing" secondItem="0jF-UT-lm3" secondAttribute="trailing" id="bTF-Ok-a1m"/>
+                        <constraint firstAttribute="trailing" secondItem="i6G-qY-Fo8" secondAttribute="trailing" constant="15" id="jR4-HK-yVn"/>
+                        <constraint firstAttribute="bottom" secondItem="0jF-UT-lm3" secondAttribute="bottom" id="lYN-Rx-GmT"/>
+                        <constraint firstItem="1p5-Md-Vqs" firstAttribute="leading" secondItem="VKo-Dr-mqc" secondAttribute="leading" id="rT6-uH-oB4"/>
+                        <constraint firstItem="i6G-qY-Fo8" firstAttribute="top" secondItem="sl5-mA-DqU" secondAttribute="bottom" constant="6" id="xYV-la-r9F"/>
+                        <constraint firstItem="sl5-mA-DqU" firstAttribute="leading" secondItem="VKo-Dr-mqc" secondAttribute="leading" constant="13" id="yLW-9t-gZ1"/>
+                        <constraint firstItem="1p5-Md-Vqs" firstAttribute="top" secondItem="VKo-Dr-mqc" secondAttribute="top" id="zMs-m8-gEr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VKo-Dr-mqc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5o1-R6-xMs"/>
+                <constraint firstItem="VKo-Dr-mqc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="AtX-ql-x9q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VKo-Dr-mqc" secondAttribute="bottom" id="W5F-kp-4dK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VKo-Dr-mqc" secondAttribute="trailing" id="k1z-cb-2Xz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="VKo-Dr-mqc" id="JeB-UA-aHl"/>
+                <outlet property="masterImageView" destination="0jF-UT-lm3" id="h7E-QI-ax1"/>
+                <outlet property="masterNameLabel" destination="sl5-mA-DqU" id="hkg-0U-sXr"/>
+                <outlet property="masterServiceLabel" destination="i6G-qY-Fo8" id="3c9-Zr-UcR"/>
+                <outlet property="overlayView" destination="1p5-Md-Vqs" id="WdT-OB-uel"/>
+            </connections>
+            <point key="canvasLocation" x="64.799999999999997" y="-95.802098950524751"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySpotThanksPage" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="izj-RO-ja7" id="cXT-Kk-pJv"/>
+                <outlet property="imageView" destination="ta5-Na-3pW" id="klg-nD-vgU"/>
+                <outlet property="manageMySpotButton" destination="abe-2a-aLM" id="otB-lU-iSi"/>
+                <outlet property="manageOfficialSpotButton" destination="yVW-H2-9Nq" id="8N3-aJ-pqt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izj-RO-ja7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W93-9g-NH1">
+                            <rect key="frame" x="106.66666666666669" y="329" width="162" height="44"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="36"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nL-7I-3UF">
+                            <rect key="frame" x="25" y="393" width="325" height="72"/>
+                            <string key="text">Your application has been submitted 
+and is currently under review.
+
+We’ll back with the result within 3 days through e-mail.
+so stay around!</string>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ta5-Na-3pW" customClass="GIFImageView" customModule="Gifu">
+                            <rect key="frame" x="80" y="94" width="215" height="215"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ta5-Na-3pW" secondAttribute="height" multiplier="1:1" id="Ny0-et-0bb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abe-2a-aLM">
+                            <rect key="frame" x="30" y="495" width="315" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Fzs-xu-Hie"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <state key="normal" title="Manage My Spot">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="manageMySpotButtonDidClicked" destination="-1" eventType="touchUpInside" id="gPW-MB-TeJ"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVW-H2-9Nq" customClass="GradientBorderButton" customModule="I_get_Spot" customModuleProvider="target">
+                            <rect key="frame" x="30" y="550" width="315" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="AhL-Yg-6Iv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <state key="normal" title="Manage Official Spot">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="manageOfficialSpotButtonDidClicked" destination="-1" eventType="touchUpInside" id="Rbj-Zs-kPf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0nL-7I-3UF" firstAttribute="top" secondItem="W93-9g-NH1" secondAttribute="bottom" constant="20" id="2e8-2Q-Veg"/>
+                        <constraint firstItem="713-jO-Kjg" firstAttribute="trailing" secondItem="0nL-7I-3UF" secondAttribute="trailing" constant="25" id="63c-Ah-IpV"/>
+                        <constraint firstItem="713-jO-Kjg" firstAttribute="trailing" secondItem="ta5-Na-3pW" secondAttribute="trailing" constant="80" id="8YH-IB-uFo"/>
+                        <constraint firstItem="abe-2a-aLM" firstAttribute="top" secondItem="0nL-7I-3UF" secondAttribute="bottom" constant="30" id="DoG-Up-AaR"/>
+                        <constraint firstItem="ta5-Na-3pW" firstAttribute="leading" secondItem="713-jO-Kjg" secondAttribute="leading" constant="80" id="GYq-wz-OYh"/>
+                        <constraint firstItem="yVW-H2-9Nq" firstAttribute="leading" secondItem="713-jO-Kjg" secondAttribute="leading" constant="30" id="QXy-SV-zxW"/>
+                        <constraint firstItem="abe-2a-aLM" firstAttribute="leading" secondItem="713-jO-Kjg" secondAttribute="leading" constant="30" id="Rah-Kv-GRE"/>
+                        <constraint firstItem="713-jO-Kjg" firstAttribute="trailing" secondItem="yVW-H2-9Nq" secondAttribute="trailing" constant="30" id="RyC-w9-cdh"/>
+                        <constraint firstItem="ta5-Na-3pW" firstAttribute="top" secondItem="713-jO-Kjg" secondAttribute="top" constant="50" id="SSt-EX-62E"/>
+                        <constraint firstItem="ta5-Na-3pW" firstAttribute="centerX" secondItem="713-jO-Kjg" secondAttribute="centerX" id="YdU-Kg-BP0"/>
+                        <constraint firstItem="713-jO-Kjg" firstAttribute="trailing" secondItem="abe-2a-aLM" secondAttribute="trailing" constant="30" id="eNR-7H-6fI"/>
+                        <constraint firstItem="yVW-H2-9Nq" firstAttribute="top" secondItem="abe-2a-aLM" secondAttribute="bottom" constant="15" id="h6s-0U-dS7"/>
+                        <constraint firstItem="W93-9g-NH1" firstAttribute="top" secondItem="ta5-Na-3pW" secondAttribute="bottom" constant="20" id="lm0-bJ-2um"/>
+                        <constraint firstItem="W93-9g-NH1" firstAttribute="centerX" secondItem="713-jO-Kjg" secondAttribute="centerX" id="nv2-Qp-PHe"/>
+                        <constraint firstItem="0nL-7I-3UF" firstAttribute="leading" secondItem="713-jO-Kjg" secondAttribute="leading" constant="25" id="pL7-wE-gPg"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="713-jO-Kjg"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="izj-RO-ja7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="21w-0e-jHz"/>
+                <constraint firstItem="izj-RO-ja7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="STh-52-4Nu"/>
+                <constraint firstItem="izj-RO-ja7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Znw-WM-3Lz"/>
+                <constraint firstItem="izj-RO-ja7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gAN-Qa-A0l"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TransactionTotalCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIZ-gI-32W">
+                    <rect key="frame" x="0.0" y="0.0" width="462" height="194"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 50,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="420-8B-gCL">
+                            <rect key="frame" x="322.5" y="21" width="106.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="VJ8-Sp-72r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAZ-WG-Ja2">
+                            <rect key="frame" x="236.5" y="21" width="65" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="7tj-dT-41h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Paid: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHI-Gy-nk8">
+                            <rect key="frame" x="220.5" y="62" width="67.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Wch-OP-0KV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MA1-xd-Wuv">
+                            <rect key="frame" x="25" y="121" width="412" height="40"/>
+                            <color key="backgroundColor" red="0.79607843140000001" green="0.80392156859999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="fot-uw-44W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <state key="normal" title="Go Back to Transaction">
+                                <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="xYu-wT-8iF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 50,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDq-gT-jOO">
+                            <rect key="frame" x="309" y="61" width="120" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="wJI-cY-gXS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="420-8B-gCL" firstAttribute="leading" secondItem="BAZ-WG-Ja2" secondAttribute="trailing" constant="21" id="1w2-UV-MJJ"/>
+                        <constraint firstItem="HDq-gT-jOO" firstAttribute="leading" secondItem="sHI-Gy-nk8" secondAttribute="trailing" constant="21" id="24B-IV-KJM"/>
+                        <constraint firstItem="sHI-Gy-nk8" firstAttribute="top" secondItem="BAZ-WG-Ja2" secondAttribute="bottom" constant="21" id="2Jh-8d-DhI"/>
+                        <constraint firstAttribute="trailing" secondItem="MA1-xd-Wuv" secondAttribute="trailing" constant="25" id="J7I-Oh-72a"/>
+                        <constraint firstItem="MA1-xd-Wuv" firstAttribute="top" secondItem="HDq-gT-jOO" secondAttribute="bottom" constant="40" id="MAy-rB-0gu"/>
+                        <constraint firstAttribute="bottom" secondItem="MA1-xd-Wuv" secondAttribute="bottom" priority="750" constant="25" id="YFf-7C-0V2"/>
+                        <constraint firstItem="BAZ-WG-Ja2" firstAttribute="top" secondItem="iIZ-gI-32W" secondAttribute="top" constant="21" id="YG9-Jx-TZL"/>
+                        <constraint firstItem="MA1-xd-Wuv" firstAttribute="leading" secondItem="iIZ-gI-32W" secondAttribute="leading" constant="25" id="cL5-4Q-NAt"/>
+                        <constraint firstAttribute="trailing" secondItem="HDq-gT-jOO" secondAttribute="trailing" constant="33" id="cT7-6O-eMc"/>
+                        <constraint firstItem="HDq-gT-jOO" firstAttribute="top" secondItem="420-8B-gCL" secondAttribute="bottom" constant="20" id="m1D-Xv-6E6"/>
+                        <constraint firstAttribute="trailing" secondItem="420-8B-gCL" secondAttribute="trailing" constant="33" id="nI0-F3-eGp"/>
+                        <constraint firstItem="420-8B-gCL" firstAttribute="top" secondItem="iIZ-gI-32W" secondAttribute="top" constant="21" id="vFJ-PL-oNh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iIZ-gI-32W" secondAttribute="trailing" id="GbV-Q2-a4Z"/>
+                <constraint firstItem="iIZ-gI-32W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MoP-65-Dy3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iIZ-gI-32W" secondAttribute="bottom" id="ha0-za-gd1"/>
+                <constraint firstItem="iIZ-gI-32W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hk3-fY-Lz4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="goBackButton" destination="MA1-xd-Wuv" id="lmn-c7-aUQ"/>
+                <outlet property="subtotalLabel" destination="420-8B-gCL" id="vva-EB-aDi"/>
+                <outlet property="totalLabel" destination="HDq-gT-jOO" id="F9s-oi-z8m"/>
+            </connections>
+            <point key="canvasLocation" x="201.59999999999999" y="-64.767616191904054"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="174" id="OFT-bc-qwB" customClass="PackageDetailPortofolioCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OFT-bc-qwB" id="teH-0f-QE3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iat-s7-BOL" customClass="PackageDetailPortofolioCollectionView" customModule="I_get_Spot" customModuleProvider="target">
+                        <rect key="frame" x="11" y="53" width="309" height="121"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-6s-atb">
+                        <rect key="frame" x="41" y="17" width="259" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="42H-ox-lgb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5HS-6s-atb" secondAttribute="trailing" constant="20" id="04L-lZ-VeT"/>
+                    <constraint firstItem="iat-s7-BOL" firstAttribute="leading" secondItem="teH-0f-QE3" secondAttribute="leading" constant="11" id="cqA-A9-TJZ"/>
+                    <constraint firstAttribute="trailing" secondItem="iat-s7-BOL" secondAttribute="trailing" id="ivK-08-k67"/>
+                    <constraint firstItem="iat-s7-BOL" firstAttribute="top" secondItem="5HS-6s-atb" secondAttribute="bottom" constant="19" id="kcC-2v-Vpo"/>
+                    <constraint firstItem="5HS-6s-atb" firstAttribute="leading" secondItem="teH-0f-QE3" secondAttribute="leading" constant="41" id="qKx-r0-oBR"/>
+                    <constraint firstItem="5HS-6s-atb" firstAttribute="top" secondItem="teH-0f-QE3" secondAttribute="top" constant="17" id="rHb-ZT-zJq"/>
+                    <constraint firstAttribute="bottom" secondItem="iat-s7-BOL" secondAttribute="bottom" id="uOG-Pt-83u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="packagePortofolioCollectionView" destination="iat-s7-BOL" id="MK7-z3-MqK"/>
+                <outlet property="titleLabel" destination="5HS-6s-atb" id="cCc-bO-qA9"/>
+            </connections>
+            <point key="canvasLocation" x="171.19999999999999" y="193.4032983508246"/>
+        </tableViewCell>
+    </objects>
+</document>

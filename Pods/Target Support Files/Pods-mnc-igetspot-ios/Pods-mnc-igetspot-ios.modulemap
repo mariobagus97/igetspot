@@ -1,0 +1,6 @@
+framework module Pods_mnc_igetspot_ios {
+  umbrella header "Pods-mnc-igetspot-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

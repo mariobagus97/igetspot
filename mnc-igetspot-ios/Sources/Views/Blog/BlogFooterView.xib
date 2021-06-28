@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlogFooterView" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qys-3h-opg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Fuc-Ud-pUp">
+                            <rect key="frame" x="16" y="14" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="GBL-66-gxg"/>
+                                <constraint firstAttribute="width" constant="20" id="Z4p-ax-93u"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xG-5a-tnN">
+                            <rect key="frame" x="58" y="10.5" width="75.5" height="17"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icShare" translatesAutoresizingMaskIntoConstraints="NO" id="xK8-6G-R1A">
+                            <rect key="frame" x="328" y="14" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="FPR-3q-x5S"/>
+                                <constraint firstAttribute="width" constant="20" id="TnZ-6d-8pP"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icShare" translatesAutoresizingMaskIntoConstraints="NO" id="jTe-Ev-lJ3">
+                            <rect key="frame" x="289" y="14" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="M7C-Pc-L8c"/>
+                                <constraint firstAttribute="height" constant="10" id="Vkn-eZ-poZ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icShare" translatesAutoresizingMaskIntoConstraints="NO" id="TX5-Md-aFC">
+                            <rect key="frame" x="250" y="14" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="HKX-p1-ltG"/>
+                                <constraint firstAttribute="height" constant="10" id="Ozb-MC-H62"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="TX5-Md-aFC" firstAttribute="centerY" secondItem="Qys-3h-opg" secondAttribute="centerY" id="6w4-1k-TqM"/>
+                        <constraint firstItem="xK8-6G-R1A" firstAttribute="leading" secondItem="jTe-Ev-lJ3" secondAttribute="trailing" constant="19" id="Etl-JR-Rf1"/>
+                        <constraint firstItem="2xG-5a-tnN" firstAttribute="centerY" secondItem="Qys-3h-opg" secondAttribute="centerY" id="IKe-Nz-i2v"/>
+                        <constraint firstItem="Fuc-Ud-pUp" firstAttribute="leading" secondItem="Qys-3h-opg" secondAttribute="leading" constant="16" id="LWl-uk-LD2"/>
+                        <constraint firstItem="jTe-Ev-lJ3" firstAttribute="centerY" secondItem="Qys-3h-opg" secondAttribute="centerY" id="NmQ-89-WLF"/>
+                        <constraint firstAttribute="trailing" secondItem="xK8-6G-R1A" secondAttribute="trailing" constant="27" id="QCh-ge-9HD"/>
+                        <constraint firstItem="xK8-6G-R1A" firstAttribute="centerY" secondItem="Qys-3h-opg" secondAttribute="centerY" id="YY1-LH-01H"/>
+                        <constraint firstItem="Fuc-Ud-pUp" firstAttribute="centerY" secondItem="Qys-3h-opg" secondAttribute="centerY" id="j0A-4c-kSr"/>
+                        <constraint firstItem="jTe-Ev-lJ3" firstAttribute="leading" secondItem="TX5-Md-aFC" secondAttribute="trailing" constant="19" id="rt2-eZ-sXj"/>
+                        <constraint firstItem="2xG-5a-tnN" firstAttribute="leading" secondItem="Fuc-Ud-pUp" secondAttribute="trailing" constant="22" id="udQ-VA-wHw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qys-3h-opg" secondAttribute="trailing" id="E9h-bm-LeF"/>
+                <constraint firstItem="Qys-3h-opg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UdC-EN-CTz"/>
+                <constraint firstItem="Qys-3h-opg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XY0-B5-cUR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qys-3h-opg" secondAttribute="bottom" id="zRO-Fm-ZSB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="commentsLabel" destination="2xG-5a-tnN" id="ZmW-Fq-oYF"/>
+                <outlet property="moreView" destination="xK8-6G-R1A" id="0AM-eV-xai"/>
+                <outlet property="shareView" destination="TX5-Md-aFC" id="Pkc-QH-FTx"/>
+            </connections>
+            <point key="canvasLocation" x="55.200000000000003" y="-234.78260869565219"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backBlack" width="22" height="16"/>
+        <image name="icShare" width="18" height="18"/>
+    </resources>
+</document>

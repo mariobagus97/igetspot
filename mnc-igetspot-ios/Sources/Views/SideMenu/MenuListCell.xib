@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuListCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djl-rU-8sj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icContact" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-Fo-mQo">
+                                <rect key="frame" x="40" y="22.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="cgn-6q-NxJ"/>
+                                    <constraint firstAttribute="height" constant="25" id="fpi-kM-ZYU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrN-1t-3NB">
+                                <rect key="frame" x="85" y="26.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXF-5f-WdD">
+                                <rect key="frame" x="0.0" y="62" width="320" height="8"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="JiB-P4-QKG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Aks-7R-caV"/>
+                            <constraint firstAttribute="trailing" secondItem="hrN-1t-3NB" secondAttribute="trailing" constant="20" id="Hpu-Xe-jz9"/>
+                            <constraint firstAttribute="bottom" secondItem="oXF-5f-WdD" secondAttribute="bottom" id="VJm-L2-wFm"/>
+                            <constraint firstItem="zsF-Fo-mQo" firstAttribute="leading" secondItem="djl-rU-8sj" secondAttribute="leading" constant="40" id="Vdo-Ki-dfr"/>
+                            <constraint firstItem="hrN-1t-3NB" firstAttribute="leading" secondItem="zsF-Fo-mQo" secondAttribute="trailing" constant="20" id="ZG6-ki-jJw"/>
+                            <constraint firstItem="oXF-5f-WdD" firstAttribute="leading" secondItem="djl-rU-8sj" secondAttribute="leading" id="e4o-a6-iIs"/>
+                            <constraint firstItem="hrN-1t-3NB" firstAttribute="centerY" secondItem="djl-rU-8sj" secondAttribute="centerY" id="iqF-Wu-jrc"/>
+                            <constraint firstItem="hrN-1t-3NB" firstAttribute="centerY" secondItem="zsF-Fo-mQo" secondAttribute="centerY" id="qEE-MG-eHu"/>
+                            <constraint firstAttribute="trailing" secondItem="oXF-5f-WdD" secondAttribute="trailing" id="xGG-Xc-KpQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="djl-rU-8sj" secondAttribute="trailing" id="13E-2g-XTe"/>
+                    <constraint firstItem="djl-rU-8sj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gPw-fz-WxA"/>
+                    <constraint firstAttribute="bottom" secondItem="djl-rU-8sj" secondAttribute="bottom" priority="750" id="h3c-04-6g5"/>
+                    <constraint firstItem="djl-rU-8sj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="w8I-6C-AMi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentHeightConstraint" destination="Aks-7R-caV" id="Sso-QW-tPq"/>
+                <outlet property="iconMenuImageView" destination="zsF-Fo-mQo" id="rh1-eU-dVe"/>
+                <outlet property="separatorHeightConstraint" destination="JiB-P4-QKG" id="v0K-DK-kZC"/>
+                <outlet property="separatorLeadingConstraint" destination="e4o-a6-iIs" id="OQc-X5-HBU"/>
+                <outlet property="separatorView" destination="oXF-5f-WdD" id="Ahq-Hw-XwX"/>
+                <outlet property="titleLabel" destination="hrN-1t-3NB" id="zjx-n7-ses"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icContact" width="25" height="25"/>
+    </resources>
+</document>

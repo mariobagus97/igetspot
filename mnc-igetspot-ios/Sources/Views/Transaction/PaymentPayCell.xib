@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PaymentPayCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiA-Yj-yTS">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="151"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vOC-XO-L0i">
+                            <rect key="frame" x="19" y="17" width="396" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-FM-cBz">
+                                    <rect key="frame" x="49" y="20" width="40" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="17" id="PhY-aX-CyN"/>
+                                        <constraint firstAttribute="width" constant="40" id="i78-8G-tfp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp. 80.000.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6a-fQ-nqz">
+                                    <rect key="frame" x="119" y="17.5" width="247" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="PKR-8H-PTj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="bHY-FM-cBz" firstAttribute="leading" secondItem="vOC-XO-L0i" secondAttribute="leading" constant="49" id="2mX-ef-wu4"/>
+                                <constraint firstAttribute="height" constant="57" id="5ij-YX-M9N"/>
+                                <constraint firstItem="bHY-FM-cBz" firstAttribute="centerY" secondItem="vOC-XO-L0i" secondAttribute="centerY" id="6hx-hB-yHD"/>
+                                <constraint firstItem="T6a-fQ-nqz" firstAttribute="centerY" secondItem="vOC-XO-L0i" secondAttribute="centerY" id="Ivy-pG-tlr"/>
+                                <constraint firstItem="T6a-fQ-nqz" firstAttribute="leading" secondItem="bHY-FM-cBz" secondAttribute="trailing" constant="30" id="RKn-Ff-suW"/>
+                                <constraint firstAttribute="trailing" secondItem="T6a-fQ-nqz" secondAttribute="trailing" constant="30" id="sNe-9w-xsd"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX2-kt-6UY">
+                            <rect key="frame" x="18" y="95" width="398" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KWE-w8-aif"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <state key="normal" title="Pay Now">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onPayPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="JlU-kT-MY1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZX2-kt-6UY" firstAttribute="leading" secondItem="LiA-Yj-yTS" secondAttribute="leading" constant="18" id="7hI-he-l02"/>
+                        <constraint firstAttribute="trailing" secondItem="vOC-XO-L0i" secondAttribute="trailing" constant="19" id="8ml-wC-N4j"/>
+                        <constraint firstItem="vOC-XO-L0i" firstAttribute="top" secondItem="LiA-Yj-yTS" secondAttribute="top" constant="17" id="CQR-pb-TTp"/>
+                        <constraint firstAttribute="bottom" secondItem="ZX2-kt-6UY" secondAttribute="bottom" constant="16" id="V2J-2k-9Mo"/>
+                        <constraint firstItem="ZX2-kt-6UY" firstAttribute="top" secondItem="vOC-XO-L0i" secondAttribute="bottom" constant="21" id="pA1-bQ-2jh"/>
+                        <constraint firstAttribute="trailing" secondItem="ZX2-kt-6UY" secondAttribute="trailing" constant="18" id="vQE-Xc-OVm"/>
+                        <constraint firstItem="vOC-XO-L0i" firstAttribute="leading" secondItem="LiA-Yj-yTS" secondAttribute="leading" constant="19" id="zAl-UT-ZQp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LiA-Yj-yTS" secondAttribute="bottom" id="AFD-tS-Wjs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LiA-Yj-yTS" secondAttribute="trailing" id="JKe-l5-Ye9"/>
+                <constraint firstItem="LiA-Yj-yTS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jpe-6g-YFc"/>
+                <constraint firstItem="LiA-Yj-yTS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="l2V-q3-ggK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="payNowButton" destination="ZX2-kt-6UY" id="ITM-ib-ktL"/>
+                <outlet property="totalLabel" destination="T6a-fQ-nqz" id="HfG-lq-cee"/>
+            </connections>
+            <point key="canvasLocation" x="89.599999999999994" y="-129.08545727136433"/>
+        </view>
+    </objects>
+</document>

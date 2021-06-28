@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PaymentBankCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-iN-h5A">
+                    <rect key="frame" x="0.0" y="0.0" width="424" height="236"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yM6-Bi-Hrg">
+                            <rect key="frame" x="23" y="48" width="401" height="62"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentBank" translatesAutoresizingMaskIntoConstraints="NO" id="f2x-Nd-QIf">
+                                    <rect key="frame" x="0.0" y="10" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="6nl-Bo-bkD"/>
+                                        <constraint firstAttribute="width" constant="20" id="mbi-6m-9fd"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM / Bank Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrE-2n-nYi">
+                                    <rect key="frame" x="46.5" y="0.0" width="103" height="15"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay from ATM Bersama, Prima or Alto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrK-4a-Oz0">
+                                    <rect key="frame" x="46.5" y="20.5" width="294.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowBottom" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-SI-J9D">
+                                    <rect key="frame" x="358" y="30" width="16" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="16" id="Sbz-ml-HzH"/>
+                                        <constraint firstAttribute="height" constant="12" id="twY-oa-0sb"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-cU-6A9">
+                                    <rect key="frame" x="0.0" y="61" width="401" height="1"/>
+                                    <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="E9g-Mi-UaZ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="cTc-cU-6A9" firstAttribute="leading" secondItem="yM6-Bi-Hrg" secondAttribute="leading" id="5G5-9W-PU8"/>
+                                <constraint firstItem="SrK-4a-Oz0" firstAttribute="leading" secondItem="f2x-Nd-QIf" secondAttribute="trailing" constant="26.699999999999999" id="6V7-5O-VqO"/>
+                                <constraint firstItem="f2x-Nd-QIf" firstAttribute="top" secondItem="yM6-Bi-Hrg" secondAttribute="top" constant="10" id="77W-6h-0lD"/>
+                                <constraint firstItem="OrE-2n-nYi" firstAttribute="top" secondItem="yM6-Bi-Hrg" secondAttribute="top" id="EGm-NU-gTI"/>
+                                <constraint firstAttribute="trailing" secondItem="RJG-SI-J9D" secondAttribute="trailing" constant="27" id="KKL-eg-WEZ"/>
+                                <constraint firstItem="f2x-Nd-QIf" firstAttribute="leading" secondItem="yM6-Bi-Hrg" secondAttribute="leading" id="Qm9-M8-zne"/>
+                                <constraint firstAttribute="trailing" secondItem="cTc-cU-6A9" secondAttribute="trailing" id="RIp-Bn-38m"/>
+                                <constraint firstItem="OrE-2n-nYi" firstAttribute="leading" secondItem="f2x-Nd-QIf" secondAttribute="trailing" constant="26.699999999999999" id="Vbv-ZF-g8C"/>
+                                <constraint firstItem="RJG-SI-J9D" firstAttribute="top" secondItem="yM6-Bi-Hrg" secondAttribute="top" constant="30" id="Vzq-yx-fkI"/>
+                                <constraint firstAttribute="bottom" secondItem="SrK-4a-Oz0" secondAttribute="bottom" constant="22" id="Yqv-os-UZQ"/>
+                                <constraint firstItem="RJG-SI-J9D" firstAttribute="leading" secondItem="SrK-4a-Oz0" secondAttribute="trailing" constant="17" id="ZzI-r9-PFP"/>
+                                <constraint firstItem="SrK-4a-Oz0" firstAttribute="top" secondItem="OrE-2n-nYi" secondAttribute="bottom" constant="5.5" id="tBf-7W-57R"/>
+                                <constraint firstAttribute="bottom" secondItem="cTc-cU-6A9" secondAttribute="bottom" id="yws-lj-4vW"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-Qu-wW0">
+                            <rect key="frame" x="19" y="18" width="375" height="20"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNF-YC-2Qj" customClass="BankListTableView" customModule="I_get_Spot" customModuleProvider="target">
+                            <rect key="frame" x="15" y="112" width="409" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="Dpt-nW-Ujg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jiH-Qu-wW0" secondAttribute="trailing" constant="30" id="7rH-4V-Mq7"/>
+                        <constraint firstItem="XNF-YC-2Qj" firstAttribute="top" secondItem="yM6-Bi-Hrg" secondAttribute="bottom" constant="2" id="FnW-iT-4Aw"/>
+                        <constraint firstItem="XNF-YC-2Qj" firstAttribute="leading" secondItem="kOT-iN-h5A" secondAttribute="leading" constant="15" id="IIZ-ZA-gvU"/>
+                        <constraint firstItem="yM6-Bi-Hrg" firstAttribute="top" secondItem="jiH-Qu-wW0" secondAttribute="bottom" constant="10" id="KAf-8z-iaR"/>
+                        <constraint firstAttribute="bottom" secondItem="XNF-YC-2Qj" secondAttribute="bottom" constant="4" id="Mez-5N-ADn"/>
+                        <constraint firstItem="jiH-Qu-wW0" firstAttribute="top" secondItem="kOT-iN-h5A" secondAttribute="top" constant="18" id="Qwe-k3-Xoi"/>
+                        <constraint firstAttribute="trailing" secondItem="yM6-Bi-Hrg" secondAttribute="trailing" id="TFt-a9-bgt"/>
+                        <constraint firstAttribute="trailing" secondItem="XNF-YC-2Qj" secondAttribute="trailing" id="ZXf-VN-CFk"/>
+                        <constraint firstItem="jiH-Qu-wW0" firstAttribute="leading" secondItem="kOT-iN-h5A" secondAttribute="leading" constant="19" id="rgK-jQ-mWe"/>
+                        <constraint firstItem="yM6-Bi-Hrg" firstAttribute="leading" secondItem="kOT-iN-h5A" secondAttribute="leading" constant="23" id="ynb-kO-0li"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kOT-iN-h5A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="77X-nw-0gI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kOT-iN-h5A" secondAttribute="bottom" id="hy6-9e-AcM"/>
+                <constraint firstItem="kOT-iN-h5A" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ub0-VI-4oZ"/>
+                <constraint firstItem="kOT-iN-h5A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wyA-f3-rhq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="arrowImage" destination="RJG-SI-J9D" id="KdX-V5-B0U"/>
+                <outlet property="atmOptionView" destination="yM6-Bi-Hrg" id="xgm-hy-JzG"/>
+                <outlet property="bankListTable" destination="XNF-YC-2Qj" id="msL-2P-IP6"/>
+                <outlet property="tableheight" destination="Dpt-nW-Ujg" id="wCR-No-3Ts"/>
+            </connections>
+            <point key="canvasLocation" x="177.59999999999999" y="-102.54872563718142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowBottom" width="17" height="12"/>
+        <image name="paymentBank" width="28" height="26.5"/>
+    </resources>
+</document>

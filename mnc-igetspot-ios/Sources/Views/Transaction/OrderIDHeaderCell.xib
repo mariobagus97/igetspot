@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="KGk-i7-Jjw" customClass="OrderIDHeaderCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbF-5j-dgc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Order ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-At-KUk">
+                                <rect key="frame" x="30" y="10" width="54" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="3VL-EY-eqU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT3-CV-0mS">
+                                <rect key="frame" x="99" y="10" width="145" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowDownWhite" translatesAutoresizingMaskIntoConstraints="NO" id="DoK-jz-eTc">
+                                <rect key="frame" x="272" y="9" width="17" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="GFX-DW-wpI"/>
+                                    <constraint firstAttribute="height" constant="17" id="rUM-fh-Bos"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uFs-At-KUk" firstAttribute="leading" secondItem="fbF-5j-dgc" secondAttribute="leading" constant="30" id="3Fn-5u-rhT"/>
+                            <constraint firstAttribute="trailing" secondItem="lT3-CV-0mS" secondAttribute="trailing" constant="76" id="6ie-Kh-fTG"/>
+                            <constraint firstItem="lT3-CV-0mS" firstAttribute="top" secondItem="fbF-5j-dgc" secondAttribute="top" constant="10" id="IZP-h3-12m"/>
+                            <constraint firstAttribute="trailing" secondItem="DoK-jz-eTc" secondAttribute="trailing" constant="31" id="KST-mf-1PX"/>
+                            <constraint firstItem="DoK-jz-eTc" firstAttribute="centerY" secondItem="fbF-5j-dgc" secondAttribute="centerY" id="dG1-RK-boB"/>
+                            <constraint firstAttribute="bottom" secondItem="lT3-CV-0mS" secondAttribute="bottom" constant="8" id="eVR-19-lAo"/>
+                            <constraint firstItem="uFs-At-KUk" firstAttribute="centerY" secondItem="lT3-CV-0mS" secondAttribute="centerY" id="fBv-pj-QMy"/>
+                            <constraint firstItem="lT3-CV-0mS" firstAttribute="leading" secondItem="uFs-At-KUk" secondAttribute="trailing" constant="15" id="tT4-SI-o5O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fbF-5j-dgc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VS8-Q8-fYf"/>
+                    <constraint firstItem="fbF-5j-dgc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y4d-zw-RBK"/>
+                    <constraint firstAttribute="trailing" secondItem="fbF-5j-dgc" secondAttribute="trailing" id="kHs-Jb-mFC"/>
+                    <constraint firstAttribute="bottom" secondItem="fbF-5j-dgc" secondAttribute="bottom" id="mwL-56-M69"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImageView" destination="DoK-jz-eTc" id="Oj3-f5-jDu"/>
+                <outlet property="containerView" destination="fbF-5j-dgc" id="4cP-SQ-7K4"/>
+                <outlet property="orderIdLabel" destination="lT3-CV-0mS" id="TCl-i8-tY1"/>
+                <outlet property="titleLabel" destination="uFs-At-KUk" id="cSj-lV-OCg"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="123.68815592203899"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowDownWhite" width="17" height="12"/>
+    </resources>
+</document>

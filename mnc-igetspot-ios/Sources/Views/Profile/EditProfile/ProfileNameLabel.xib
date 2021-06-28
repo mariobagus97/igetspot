@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileNameLabel" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBE-4b-acP">
+                    <rect key="frame" x="20" y="8" width="268" height="63"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krn-Sx-yaR">
+                            <rect key="frame" x="0.0" y="7" width="34" height="17"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EZ-ey-voZ">
+                            <rect key="frame" x="0.0" y="62" width="268" height="1"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="eqf-og-cg3"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ctd-12-xYO">
+                            <rect key="frame" x="0.0" y="34" width="258" height="20"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9EZ-ey-voZ" secondAttribute="trailing" id="1e3-tL-5lx"/>
+                        <constraint firstItem="9EZ-ey-voZ" firstAttribute="leading" secondItem="wBE-4b-acP" secondAttribute="leading" id="7pa-Q9-CE3"/>
+                        <constraint firstItem="9EZ-ey-voZ" firstAttribute="top" secondItem="Ctd-12-xYO" secondAttribute="bottom" constant="8" id="Hcf-GU-JFL"/>
+                        <constraint firstItem="Ctd-12-xYO" firstAttribute="top" secondItem="krn-Sx-yaR" secondAttribute="bottom" constant="10" id="WMD-Ja-kqN"/>
+                        <constraint firstItem="Ctd-12-xYO" firstAttribute="leading" secondItem="wBE-4b-acP" secondAttribute="leading" id="giq-OL-VpQ"/>
+                        <constraint firstItem="krn-Sx-yaR" firstAttribute="leading" secondItem="wBE-4b-acP" secondAttribute="leading" id="muK-yg-NWI"/>
+                        <constraint firstAttribute="trailing" secondItem="Ctd-12-xYO" secondAttribute="trailing" constant="10" id="nvk-dL-sU3"/>
+                        <constraint firstAttribute="bottom" secondItem="9EZ-ey-voZ" secondAttribute="bottom" id="r0B-hz-onv"/>
+                        <constraint firstItem="krn-Sx-yaR" firstAttribute="top" secondItem="wBE-4b-acP" secondAttribute="top" constant="7" id="xi7-be-AmH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wBE-4b-acP" secondAttribute="trailing" id="39U-2N-gj2"/>
+                <constraint firstItem="wBE-4b-acP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="3vA-Ho-pTQ"/>
+                <constraint firstItem="wBE-4b-acP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="KoM-a7-Fxa"/>
+                <constraint firstItem="wBE-4b-acP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="iMZ-Hn-3A4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="itemContentField" destination="Ctd-12-xYO" id="adl-cX-12h"/>
+                <outlet property="itemNameLabel" destination="krn-Sx-yaR" id="jjk-RW-I7T"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-299.5"/>
+        </view>
+    </objects>
+</document>

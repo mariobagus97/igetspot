@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="97H-aq-bc3" customClass="OrderAgainCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="97H-aq-bc3" id="WU9-Y5-0O7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-o3-FLe">
+                        <rect key="frame" x="11" y="0.0" width="298" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loving this so much?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD1-Aw-bS5">
+                                <rect key="frame" x="15" y="21.5" width="108.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GY7-5g-l5P">
+                                <rect key="frame" x="133" y="9" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Pq5-8i-hkA"/>
+                                    <constraint firstAttribute="width" constant="150" id="iTF-ze-cNu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                <state key="normal" title="Order Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="orderButtonDidClicked" destination="97H-aq-bc3" eventType="touchUpInside" id="ddU-A6-WC7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GY7-5g-l5P" secondAttribute="trailing" constant="15" id="9Io-Y5-Rm7"/>
+                            <constraint firstAttribute="height" constant="57" id="Blv-NY-ErO"/>
+                            <constraint firstItem="GY7-5g-l5P" firstAttribute="centerY" secondItem="5GV-o3-FLe" secondAttribute="centerY" id="OVg-IJ-HsF"/>
+                            <constraint firstItem="YD1-Aw-bS5" firstAttribute="leading" secondItem="5GV-o3-FLe" secondAttribute="leading" constant="15" id="RKe-lX-IkZ"/>
+                            <constraint firstItem="YD1-Aw-bS5" firstAttribute="centerY" secondItem="GY7-5g-l5P" secondAttribute="centerY" id="Ys3-Sv-B5y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5GV-o3-FLe" firstAttribute="leading" secondItem="WU9-Y5-0O7" secondAttribute="leading" constant="11" id="1bR-li-4PV"/>
+                    <constraint firstAttribute="trailing" secondItem="5GV-o3-FLe" secondAttribute="trailing" constant="11" id="DDk-Ic-OcO"/>
+                    <constraint firstAttribute="bottom" secondItem="5GV-o3-FLe" secondAttribute="bottom" constant="20" id="rkZ-1L-u0F"/>
+                    <constraint firstItem="5GV-o3-FLe" firstAttribute="top" secondItem="WU9-Y5-0O7" secondAttribute="top" id="ujo-iE-I1x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="XXy-3K-6I0"/>
+            <connections>
+                <outlet property="orderAgainButton" destination="GY7-5g-l5P" id="gDQ-6P-4YK"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="150.67466266866569"/>
+        </tableViewCell>
+    </objects>
+</document>

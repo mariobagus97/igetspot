@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TransactionPaymentConfirmCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWP-RR-8Ti">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExI-Mc-Swc">
+                            <rect key="frame" x="20" y="20" width="157" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="SYY-N4-gGI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silakan lakukan pembayaran ke salah satu nomor rekening i Get Spot yang tertera dibawah ini sebelum 28 Feb 2019, 12:11:47" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dI-tR-J31">
+                            <rect key="frame" x="20" y="58" width="307" height="50.5"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-Ga-tza">
+                            <rect key="frame" x="20" y="128.5" width="335" height="109.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-vS-EQW">
+                                    <rect key="frame" x="13" y="15" width="95" height="17"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nomor Rekening:   (022) 058187889196694" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaI-O3-ksm">
+                                    <rect key="frame" x="13" y="68.5" width="292" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Negara Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvu-OO-hLn">
+                                    <rect key="frame" x="13" y="45" width="292" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copy VA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-kX-yGQ">
+                                    <rect key="frame" x="13" y="88" width="216" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="KaI-O3-ksm" secondAttribute="trailing" constant="30" id="3ia-Mb-72R"/>
+                                <constraint firstItem="vvu-OO-hLn" firstAttribute="leading" secondItem="Rhp-Ga-tza" secondAttribute="leading" constant="13" id="43E-u0-1Ko"/>
+                                <constraint firstAttribute="bottom" secondItem="KaI-O3-ksm" secondAttribute="bottom" constant="18.5" id="EOZ-wO-SZS"/>
+                                <constraint firstItem="KaI-O3-ksm" firstAttribute="top" secondItem="vvu-OO-hLn" secondAttribute="bottom" constant="7" id="JNR-9u-edv"/>
+                                <constraint firstItem="VNX-vS-EQW" firstAttribute="leading" secondItem="Rhp-Ga-tza" secondAttribute="leading" constant="13" id="ayY-vH-i1G"/>
+                                <constraint firstItem="KaI-O3-ksm" firstAttribute="leading" secondItem="Rhp-Ga-tza" secondAttribute="leading" constant="13" id="eB4-A5-xfZ"/>
+                                <constraint firstItem="vvu-OO-hLn" firstAttribute="top" secondItem="VNX-vS-EQW" secondAttribute="bottom" constant="13" id="hTT-la-neV"/>
+                                <constraint firstAttribute="trailing" secondItem="vvu-OO-hLn" secondAttribute="trailing" constant="30" id="hiq-KB-hDj"/>
+                                <constraint firstItem="VNX-vS-EQW" firstAttribute="top" secondItem="Rhp-Ga-tza" secondAttribute="top" constant="15" id="oUs-RE-P2X"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usb-re-0b4">
+                            <rect key="frame" x="20" y="0.0" width="355" height="2"/>
+                            <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="lBJ-7B-icS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="usb-re-0b4" firstAttribute="leading" secondItem="vWP-RR-8Ti" secondAttribute="leading" constant="20" id="0xi-Eg-um1"/>
+                        <constraint firstItem="4dI-tR-J31" firstAttribute="top" secondItem="ExI-Mc-Swc" secondAttribute="bottom" constant="18" id="AKy-5d-YDN"/>
+                        <constraint firstItem="ExI-Mc-Swc" firstAttribute="top" secondItem="vWP-RR-8Ti" secondAttribute="top" constant="20" id="Cp7-AV-8Xy"/>
+                        <constraint firstItem="ExI-Mc-Swc" firstAttribute="leading" secondItem="vWP-RR-8Ti" secondAttribute="leading" constant="20" id="JT4-Tw-zLC"/>
+                        <constraint firstItem="Rhp-Ga-tza" firstAttribute="leading" secondItem="vWP-RR-8Ti" secondAttribute="leading" constant="20" id="KXV-Sm-pJb"/>
+                        <constraint firstItem="Rhp-Ga-tza" firstAttribute="top" secondItem="4dI-tR-J31" secondAttribute="bottom" constant="20" id="Mx2-YJ-IHZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Rhp-Ga-tza" secondAttribute="bottom" constant="18" id="R8C-oW-sRJ"/>
+                        <constraint firstAttribute="trailing" secondItem="4dI-tR-J31" secondAttribute="trailing" constant="48" id="ewP-ny-XvF"/>
+                        <constraint firstAttribute="trailing" secondItem="usb-re-0b4" secondAttribute="trailing" id="fpL-gm-3Pg"/>
+                        <constraint firstItem="usb-re-0b4" firstAttribute="top" secondItem="vWP-RR-8Ti" secondAttribute="top" id="jDS-Mk-vQx"/>
+                        <constraint firstItem="4dI-tR-J31" firstAttribute="leading" secondItem="vWP-RR-8Ti" secondAttribute="leading" constant="20" id="tgI-qr-sfx"/>
+                        <constraint firstAttribute="trailing" secondItem="Rhp-Ga-tza" secondAttribute="trailing" constant="20" id="u2q-yW-RLN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vWP-RR-8Ti" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AIJ-5m-Wuk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vWP-RR-8Ti" secondAttribute="trailing" id="Ljq-Bn-piq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vWP-RR-8Ti" secondAttribute="bottom" id="NC2-f5-ivE"/>
+                <constraint firstItem="vWP-RR-8Ti" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="u6R-jR-96z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CopyVALabel" destination="f8p-kX-yGQ" id="ju2-1G-O16"/>
+                <outlet property="bankNameLabel" destination="vvu-OO-hLn" id="ox5-uq-AuQ"/>
+                <outlet property="dateLabel" destination="4dI-tR-J31" id="JW0-jP-WPK"/>
+                <outlet property="rekeningLabel" destination="KaI-O3-ksm" id="LoQ-gR-WDu"/>
+            </connections>
+            <point key="canvasLocation" x="85.599999999999994" y="-53.073463268365821"/>
+        </view>
+    </objects>
+</document>

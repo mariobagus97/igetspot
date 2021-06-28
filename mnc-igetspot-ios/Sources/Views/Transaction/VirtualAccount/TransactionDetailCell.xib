@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="TransactionDetailCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17w-c0-pwy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-2w-dXE">
+                            <rect key="frame" x="13" y="15" width="342" height="17"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ACL-YI-cEm">
+                            <rect key="frame" x="13" y="42" width="342" height="17"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Order Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euy-M8-mMY">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="1TP-19-dRs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="wrwefkewf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-hF-dNR">
+                                    <rect key="frame" x="84" y="0.0" width="258" height="17"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="RGz-tn-Vmz"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YEG-Ir-ji9">
+                            <rect key="frame" x="13" y="65" width="342" height="17"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cg-gj-q0S">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="85" id="fSA-wE-l20"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRl-P7-vNL">
+                                    <rect key="frame" x="94" y="0.0" width="248" height="17"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-Bf-S78">
+                            <rect key="frame" x="13" y="101" width="349" height="2"/>
+                            <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="pDX-zO-Ssw"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" text="Venue:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lp-QY-cEb">
+                            <rect key="frame" x="13" y="122" width="45" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="VXY-Ya-BPB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mana aja" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLl-SY-pVO">
+                            <rect key="frame" x="64" y="122" width="291" height="17"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vn-2f-9VY" userLabel="Duration:">
+                            <rect key="frame" x="13" y="144" width="65" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="PPL-dE-WPk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 50,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9T-P1-zAJ">
+                            <rect key="frame" x="210" y="168" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="4eh-00-EtD"/>
+                                <constraint firstAttribute="width" constant="150" id="aab-dV-DYg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="20 Hours" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31h-u4-kqX">
+                            <rect key="frame" x="84" y="144" width="261" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="u7j-Ra-69i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ACL-YI-cEm" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="1Zc-zm-zG5"/>
+                        <constraint firstItem="8lp-QY-cEb" firstAttribute="top" secondItem="YGD-Bf-S78" secondAttribute="bottom" constant="19" id="27K-Gu-ypN"/>
+                        <constraint firstItem="6Vn-2f-9VY" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="4vi-Da-ReK"/>
+                        <constraint firstItem="l9T-P1-zAJ" firstAttribute="top" secondItem="31h-u4-kqX" secondAttribute="bottom" constant="7" id="6ax-vl-eKU"/>
+                        <constraint firstAttribute="trailing" secondItem="l9T-P1-zAJ" secondAttribute="trailing" constant="15" id="8fO-lN-Ibh"/>
+                        <constraint firstAttribute="trailing" secondItem="ACL-YI-cEm" secondAttribute="trailing" constant="20" id="9Va-QK-a8M"/>
+                        <constraint firstItem="gsE-2w-dXE" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="CJi-pN-LLa"/>
+                        <constraint firstItem="8lp-QY-cEb" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="CPC-AL-bIQ"/>
+                        <constraint firstAttribute="trailing" secondItem="31h-u4-kqX" secondAttribute="trailing" constant="30" id="DCS-HV-ksL"/>
+                        <constraint firstItem="YEG-Ir-ji9" firstAttribute="top" secondItem="ACL-YI-cEm" secondAttribute="bottom" constant="6" id="NGf-YT-xww"/>
+                        <constraint firstItem="YGD-Bf-S78" firstAttribute="top" secondItem="YEG-Ir-ji9" secondAttribute="bottom" constant="19" id="QVb-vg-zUZ"/>
+                        <constraint firstAttribute="trailing" secondItem="YEG-Ir-ji9" secondAttribute="trailing" constant="20" id="Ry6-He-pfh"/>
+                        <constraint firstItem="YEG-Ir-ji9" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="SBU-8z-h5L"/>
+                        <constraint firstAttribute="trailing" secondItem="YGD-Bf-S78" secondAttribute="trailing" constant="13" id="UYe-5d-5FP"/>
+                        <constraint firstItem="ACL-YI-cEm" firstAttribute="top" secondItem="gsE-2w-dXE" secondAttribute="bottom" constant="10" id="VSf-f3-xyS"/>
+                        <constraint firstItem="YGD-Bf-S78" firstAttribute="leading" secondItem="17w-c0-pwy" secondAttribute="leading" constant="13" id="WE2-OT-L6o"/>
+                        <constraint firstItem="31h-u4-kqX" firstAttribute="leading" secondItem="6Vn-2f-9VY" secondAttribute="trailing" constant="6" id="bPw-dW-dfX"/>
+                        <constraint firstItem="CLl-SY-pVO" firstAttribute="top" secondItem="YGD-Bf-S78" secondAttribute="bottom" constant="19" id="g5P-qV-ky8"/>
+                        <constraint firstItem="gsE-2w-dXE" firstAttribute="top" secondItem="17w-c0-pwy" secondAttribute="top" constant="15" id="gEo-m6-ySL"/>
+                        <constraint firstAttribute="trailing" secondItem="gsE-2w-dXE" secondAttribute="trailing" constant="20" id="goQ-sz-ZhP"/>
+                        <constraint firstItem="6Vn-2f-9VY" firstAttribute="top" secondItem="CLl-SY-pVO" secondAttribute="bottom" constant="5" id="ic0-sK-2g3"/>
+                        <constraint firstItem="31h-u4-kqX" firstAttribute="top" secondItem="CLl-SY-pVO" secondAttribute="bottom" constant="5" id="lUO-Vc-gf6"/>
+                        <constraint firstAttribute="trailing" secondItem="CLl-SY-pVO" secondAttribute="trailing" constant="20" id="pnu-xO-U17"/>
+                        <constraint firstItem="CLl-SY-pVO" firstAttribute="leading" secondItem="8lp-QY-cEb" secondAttribute="trailing" constant="6" id="t31-Q6-iDD"/>
+                        <constraint firstAttribute="bottom" secondItem="l9T-P1-zAJ" secondAttribute="bottom" constant="8" id="uNq-HJ-w8R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="17w-c0-pwy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EA7-3w-b0X"/>
+                <constraint firstAttribute="trailing" secondItem="17w-c0-pwy" secondAttribute="trailing" id="LmA-H9-gPv"/>
+                <constraint firstItem="17w-c0-pwy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f6x-QN-BDE"/>
+                <constraint firstAttribute="bottom" secondItem="17w-c0-pwy" secondAttribute="bottom" id="fSa-lg-19e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <connections>
+                <outlet property="durationLabel" destination="31h-u4-kqX" id="hCu-w2-Dzq"/>
+                <outlet property="orderDateLabel" destination="yhl-hF-dNR" id="qS7-nu-MdY"/>
+                <outlet property="packageNameLabel" destination="gsE-2w-dXE" id="8Dr-JD-BdU"/>
+                <outlet property="packageTotalLabel" destination="l9T-P1-zAJ" id="Ux6-OW-5ax"/>
+                <outlet property="serviceDateLabel" destination="NRl-P7-vNL" id="sGY-a3-p2d"/>
+                <outlet property="venueLabel" destination="CLl-SY-pVO" id="2fZ-Z5-f7L"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="-127.736131934033"/>
+        </view>
+    </objects>
+</document>

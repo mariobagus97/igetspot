@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="HMd-fa-07Z" customClass="OrderNotesCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="HMd-fa-07Z" id="JPY-Hd-TSx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcG-5X-JGp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wia-nq-Baj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-ED-cKe">
+                                        <rect key="frame" x="21" y="74" width="299" height="1"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="c69-Hr-njp"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="notesColor" translatesAutoresizingMaskIntoConstraints="NO" id="wp4-Zb-G6A">
+                                        <rect key="frame" x="22" y="31" width="19" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-R2-bqX">
+                                        <rect key="frame" x="53" y="37" width="210" height="20"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBn-ki-CEq">
+                                        <rect key="frame" x="53" y="20.5" width="31" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-OZ-mZL">
+                                        <rect key="frame" x="278" y="34" width="12" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="6Ce-fS-Hv2"/>
+                                            <constraint firstAttribute="width" constant="12" id="ugX-iO-ECQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dBP-R2-bqX" firstAttribute="leading" secondItem="wp4-Zb-G6A" secondAttribute="trailing" constant="12" id="Akz-0Y-ZYW"/>
+                                    <constraint firstItem="3a4-OZ-mZL" firstAttribute="top" secondItem="Wia-nq-Baj" secondAttribute="top" constant="34" id="DJU-Xo-xdu"/>
+                                    <constraint firstAttribute="bottom" secondItem="dXE-ED-cKe" secondAttribute="bottom" id="Dz2-hd-Oan"/>
+                                    <constraint firstItem="3a4-OZ-mZL" firstAttribute="leading" secondItem="dBP-R2-bqX" secondAttribute="trailing" constant="15" id="EEC-80-Jce"/>
+                                    <constraint firstItem="dXE-ED-cKe" firstAttribute="top" secondItem="wp4-Zb-G6A" secondAttribute="bottom" constant="23" id="FVA-J3-4RH"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXE-ED-cKe" secondAttribute="trailing" id="Z8f-Od-J5W"/>
+                                    <constraint firstAttribute="trailing" secondItem="3a4-OZ-mZL" secondAttribute="trailing" constant="30" id="cW0-9U-LsT"/>
+                                    <constraint firstItem="dXE-ED-cKe" firstAttribute="leading" secondItem="Wia-nq-Baj" secondAttribute="leading" constant="21" id="fm5-XG-9nC"/>
+                                    <constraint firstItem="wp4-Zb-G6A" firstAttribute="leading" secondItem="Wia-nq-Baj" secondAttribute="leading" constant="22" id="gRl-yy-HNi"/>
+                                    <constraint firstItem="oBn-ki-CEq" firstAttribute="leading" secondItem="dBP-R2-bqX" secondAttribute="leading" id="jQZ-mg-unj"/>
+                                    <constraint firstAttribute="bottom" secondItem="dBP-R2-bqX" secondAttribute="bottom" constant="18" id="u2F-It-mg1"/>
+                                    <constraint firstItem="dBP-R2-bqX" firstAttribute="top" secondItem="oBn-ki-CEq" secondAttribute="bottom" constant="2" id="v68-L6-ffK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="3kR-Iv-VWC"/>
+                            <constraint firstAttribute="bottom" secondItem="Wia-nq-Baj" secondAttribute="bottom" id="D9z-12-o3E"/>
+                            <constraint firstItem="Wia-nq-Baj" firstAttribute="top" secondItem="XcG-5X-JGp" secondAttribute="top" id="auR-jc-dE2"/>
+                            <constraint firstItem="Wia-nq-Baj" firstAttribute="leading" secondItem="XcG-5X-JGp" secondAttribute="leading" id="uA4-vA-sdP"/>
+                            <constraint firstItem="Wia-nq-Baj" firstAttribute="width" secondItem="XcG-5X-JGp" secondAttribute="width" id="yMQ-aU-MW1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XcG-5X-JGp" secondAttribute="trailing" id="G1F-nt-edC"/>
+                    <constraint firstItem="XcG-5X-JGp" firstAttribute="leading" secondItem="JPY-Hd-TSx" secondAttribute="leading" id="teZ-Iz-C4o"/>
+                    <constraint firstItem="XcG-5X-JGp" firstAttribute="top" secondItem="JPY-Hd-TSx" secondAttribute="top" id="xNa-du-T9N"/>
+                    <constraint firstAttribute="bottom" secondItem="XcG-5X-JGp" secondAttribute="bottom" id="z8l-t8-n9S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="MlS-rQ-Wqn"/>
+            <connections>
+                <outlet property="notesLabel" destination="dBP-R2-bqX" id="NTB-Kl-h2m"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="152.02398800599701"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="12" height="16"/>
+        <image name="notesColor" width="19" height="20"/>
+    </resources>
+</document>

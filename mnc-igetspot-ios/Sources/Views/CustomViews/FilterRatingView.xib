@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterRatingView" customModule="I_get_Spot" customModuleProvider="target">
+            <connections>
+                <outlet property="allRatingButton" destination="PTU-Pc-3BF" id="Mqy-Mn-62d"/>
+                <outlet property="fiveStarRatingButton" destination="O1W-LC-aS6" id="sMB-8g-0qq"/>
+                <outlet property="fourStarRatingButton" destination="ard-Gx-GHF" id="7QQ-3l-KCu"/>
+                <outlet property="oneStarRatingButton" destination="dTP-c9-Uuz" id="Cr7-bt-xHK"/>
+                <outlet property="threeStarRatingButton" destination="ljy-AP-5OK" id="kTg-5X-KoW"/>
+                <outlet property="twoStarRatingButton" destination="xWy-x3-UAg" id="Mxq-Jv-USF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3iB-aY-OlO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRJ-RI-mRf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wRI-aS-WlM">
+                            <rect key="frame" x="8" y="0.0" width="359" height="65"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTU-Pc-3BF">
+                                    <rect key="frame" x="0.0" y="19" width="55.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <state key="normal" title="All">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="allRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="aOg-S5-sIf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTP-c9-Uuz">
+                                    <rect key="frame" x="60.5" y="19" width="56" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <state key="normal" title="1" image="starGreySmall">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="oneRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="JgX-Is-pyN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWy-x3-UAg">
+                                    <rect key="frame" x="121.5" y="19" width="55.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <state key="normal" title="2" image="starGreySmall">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="twoRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="4qQ-kU-ztC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljy-AP-5OK">
+                                    <rect key="frame" x="182" y="19" width="55.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <state key="normal" title="3" image="starGreySmall">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="threeRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="sNB-21-7wG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ard-Gx-GHF">
+                                    <rect key="frame" x="242.5" y="19" width="56" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <state key="normal" title="4" image="starGreySmall">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="fourRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="enK-rX-ywI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1W-LC-aS6">
+                                    <rect key="frame" x="303.5" y="19" width="55.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <state key="normal" title="5" image="starGreySmall">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="fiveRatingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="heo-Fa-3oo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="ljy-AP-5OK" firstAttribute="height" secondItem="PTU-Pc-3BF" secondAttribute="height" id="1eH-pc-YOB"/>
+                                <constraint firstItem="dTP-c9-Uuz" firstAttribute="height" secondItem="PTU-Pc-3BF" secondAttribute="height" id="g6N-Om-dZ7"/>
+                                <constraint firstItem="O1W-LC-aS6" firstAttribute="height" secondItem="PTU-Pc-3BF" secondAttribute="height" id="jhm-hy-ku1"/>
+                                <constraint firstItem="xWy-x3-UAg" firstAttribute="height" secondItem="PTU-Pc-3BF" secondAttribute="height" id="oxj-Wb-S63"/>
+                                <constraint firstItem="ard-Gx-GHF" firstAttribute="height" secondItem="PTU-Pc-3BF" secondAttribute="height" id="tw9-77-6tN"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wRI-aS-WlM" secondAttribute="bottom" id="8Gv-V9-XRh"/>
+                        <constraint firstAttribute="height" priority="999" constant="45" id="LT1-dg-RwN"/>
+                        <constraint firstItem="wRI-aS-WlM" firstAttribute="leading" secondItem="aRJ-RI-mRf" secondAttribute="leading" constant="8" id="OCs-zT-BJm"/>
+                        <constraint firstAttribute="trailing" secondItem="wRI-aS-WlM" secondAttribute="trailing" constant="8" id="uQS-0c-crk"/>
+                        <constraint firstItem="wRI-aS-WlM" firstAttribute="top" secondItem="aRJ-RI-mRf" secondAttribute="top" id="w8h-U2-C6U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xek-JH-t73" firstAttribute="trailing" secondItem="aRJ-RI-mRf" secondAttribute="trailing" id="00q-UZ-WUa"/>
+                <constraint firstItem="aRJ-RI-mRf" firstAttribute="top" secondItem="xek-JH-t73" secondAttribute="top" id="JWk-Ar-e9b"/>
+                <constraint firstItem="aRJ-RI-mRf" firstAttribute="leading" secondItem="3iB-aY-OlO" secondAttribute="leading" id="WwZ-CF-o2f"/>
+                <constraint firstItem="xek-JH-t73" firstAttribute="bottom" secondItem="aRJ-RI-mRf" secondAttribute="bottom" id="nsJ-Gu-A4P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xek-JH-t73"/>
+            <point key="canvasLocation" x="136.80000000000001" y="-94.002998500749626"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="starGreySmall" width="13" height="12"/>
+    </resources>
+</document>

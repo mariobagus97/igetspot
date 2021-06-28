@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ItemTextFieldCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnG-Tk-qrx">
+                    <rect key="frame" x="20" y="0.0" width="355" height="83"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYP-KL-TLP">
+                            <rect key="frame" x="0.0" y="10" width="325" height="16"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="13"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaD-TS-Isd">
+                            <rect key="frame" x="0.0" y="34" width="325" height="39"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="13"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIH-ex-A5d">
+                            <rect key="frame" x="0.0" y="82" width="355" height="1"/>
+                            <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="GzB-Pk-biR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rIH-ex-A5d" secondAttribute="bottom" id="3EG-4M-vgH"/>
+                        <constraint firstAttribute="trailing" secondItem="DaD-TS-Isd" secondAttribute="trailing" constant="30" id="Amn-nm-sSt"/>
+                        <constraint firstItem="DaD-TS-Isd" firstAttribute="top" secondItem="NYP-KL-TLP" secondAttribute="bottom" constant="8" id="CBY-3R-ozV"/>
+                        <constraint firstAttribute="bottom" secondItem="DaD-TS-Isd" secondAttribute="bottom" constant="10" id="DCE-76-i1D"/>
+                        <constraint firstItem="NYP-KL-TLP" firstAttribute="leading" secondItem="OnG-Tk-qrx" secondAttribute="leading" id="G9p-yp-huu"/>
+                        <constraint firstAttribute="trailing" secondItem="NYP-KL-TLP" secondAttribute="trailing" constant="30" id="WAP-mf-Z9p"/>
+                        <constraint firstAttribute="trailing" secondItem="rIH-ex-A5d" secondAttribute="trailing" id="ewZ-5a-YF7"/>
+                        <constraint firstItem="rIH-ex-A5d" firstAttribute="leading" secondItem="OnG-Tk-qrx" secondAttribute="leading" id="jf9-9K-s2G"/>
+                        <constraint firstItem="DaD-TS-Isd" firstAttribute="leading" secondItem="OnG-Tk-qrx" secondAttribute="leading" id="ppK-kF-zba"/>
+                        <constraint firstItem="NYP-KL-TLP" firstAttribute="top" secondItem="OnG-Tk-qrx" secondAttribute="top" constant="10" id="sRh-kq-PKY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OnG-Tk-qrx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="65f-AD-b7s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OnG-Tk-qrx" secondAttribute="bottom" id="f6Z-Vg-685"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OnG-Tk-qrx" secondAttribute="trailing" id="kKW-dL-IMh"/>
+                <constraint firstItem="OnG-Tk-qrx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ud6-VQ-LEf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerItemTextField" destination="OnG-Tk-qrx" id="d4n-b7-8cx"/>
+                <outlet property="itemContentField" destination="DaD-TS-Isd" id="Snn-GD-Vnc"/>
+                <outlet property="itemNameLabel" destination="NYP-KL-TLP" id="564-uA-2na"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="-238.5"/>
+        </view>
+    </objects>
+</document>

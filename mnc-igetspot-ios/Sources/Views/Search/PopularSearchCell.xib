@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopularSearchCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-yz-C2n">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J90-Af-gdT" customClass="PopularSearchCollectionView" customModule="I_get_Spot" customModuleProvider="target">
+                            <rect key="frame" x="23" y="53" width="335" height="146"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-ji-9G6">
+                            <rect key="frame" x="11" y="217" width="355" height="1"/>
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jYX-AC-c7g"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87A-gq-1oj">
+                            <rect key="frame" x="309" y="18" width="43" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="MYW-kT-atE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjP-E7-T1U">
+                            <rect key="frame" x="23" y="18" width="91.5" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="CMz-eN-Fcr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="J90-Af-gdT" firstAttribute="top" secondItem="hjP-E7-T1U" secondAttribute="bottom" constant="18" id="8qz-In-484"/>
+                        <constraint firstItem="J90-Af-gdT" firstAttribute="leading" secondItem="1u8-yz-C2n" secondAttribute="leading" constant="23" id="GLD-uO-Awt"/>
+                        <constraint firstItem="hjP-E7-T1U" firstAttribute="leading" secondItem="1u8-yz-C2n" secondAttribute="leading" constant="23" id="GcA-WM-CmS"/>
+                        <constraint firstItem="87A-gq-1oj" firstAttribute="top" secondItem="1u8-yz-C2n" secondAttribute="top" constant="18" id="aL6-FF-CGR"/>
+                        <constraint firstItem="6E1-ji-9G6" firstAttribute="top" secondItem="J90-Af-gdT" secondAttribute="bottom" constant="18" id="e06-qc-Txb"/>
+                        <constraint firstAttribute="trailing" secondItem="6E1-ji-9G6" secondAttribute="trailing" constant="9" id="kAU-Oh-7yA"/>
+                        <constraint firstItem="6E1-ji-9G6" firstAttribute="leading" secondItem="1u8-yz-C2n" secondAttribute="leading" constant="11" id="kpe-6f-4bW"/>
+                        <constraint firstAttribute="trailing" secondItem="J90-Af-gdT" secondAttribute="trailing" constant="17" id="nwX-WF-wNi"/>
+                        <constraint firstItem="hjP-E7-T1U" firstAttribute="top" secondItem="1u8-yz-C2n" secondAttribute="top" constant="18" id="qZn-Pf-8Ew"/>
+                        <constraint firstAttribute="trailing" secondItem="87A-gq-1oj" secondAttribute="trailing" constant="23" id="rXv-MC-Ycm"/>
+                        <constraint firstAttribute="bottom" secondItem="6E1-ji-9G6" secondAttribute="bottom" id="wZe-nB-t2Y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1u8-yz-C2n" secondAttribute="trailing" id="QOk-cg-BRA"/>
+                <constraint firstItem="1u8-yz-C2n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eiQ-8L-6nv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1u8-yz-C2n" secondAttribute="bottom" id="fww-en-abV"/>
+                <constraint firstItem="1u8-yz-C2n" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nwZ-K4-Fiv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="clearAllLabel" destination="87A-gq-1oj" id="zGu-uM-csd"/>
+                <outlet property="popularCollectionView" destination="J90-Af-gdT" id="Ulp-1j-Ysb"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-47.676161919040482"/>
+        </view>
+    </objects>
+</document>

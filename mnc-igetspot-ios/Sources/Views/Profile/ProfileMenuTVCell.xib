@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileMenuTVCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUs-v2-BVg">
+                    <rect key="frame" x="21" y="0.0" width="286" height="61"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="cFE-vx-ep9">
+                            <rect key="frame" x="238" y="22" width="17" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="CHL-4o-PJG"/>
+                                <constraint firstAttribute="width" constant="17" id="Reh-3O-Hf6"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28a-ce-3Xd">
+                            <rect key="frame" x="0.0" y="60.5" width="286" height="0.5"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="5i4-e2-hZU"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-w6-NA2">
+                            <rect key="frame" x="0.0" y="22" width="96.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cFE-vx-ep9" firstAttribute="centerY" secondItem="fUs-v2-BVg" secondAttribute="centerY" id="40Q-60-8EF"/>
+                        <constraint firstItem="eI4-w6-NA2" firstAttribute="centerY" secondItem="fUs-v2-BVg" secondAttribute="centerY" id="CsB-0Y-rJg"/>
+                        <constraint firstItem="eI4-w6-NA2" firstAttribute="leading" secondItem="fUs-v2-BVg" secondAttribute="leading" id="aWV-DI-73s"/>
+                        <constraint firstAttribute="bottom" secondItem="28a-ce-3Xd" secondAttribute="bottom" id="d09-9v-N5i"/>
+                        <constraint firstItem="28a-ce-3Xd" firstAttribute="leading" secondItem="fUs-v2-BVg" secondAttribute="leading" id="hBB-68-HPD"/>
+                        <constraint firstAttribute="trailing" secondItem="cFE-vx-ep9" secondAttribute="trailing" constant="31" id="qxI-e3-Wcz"/>
+                        <constraint firstAttribute="trailing" secondItem="28a-ce-3Xd" secondAttribute="trailing" id="u1P-p0-ooP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fUs-v2-BVg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="79Z-Ho-MfW"/>
+                <constraint firstItem="fUs-v2-BVg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="UvZ-yo-iKC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fUs-v2-BVg" secondAttribute="trailing" id="WfZ-dh-Ks2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fUs-v2-BVg" secondAttribute="bottom" id="YMh-Yo-Vy9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="28a-ce-3Xd" id="oYj-zh-Fy8"/>
+                <outlet property="intoMenuLabel" destination="cFE-vx-ep9" id="xak-LV-651"/>
+                <outlet property="profileListLabel" destination="eI4-w6-NA2" id="igV-32-aTS"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="-249.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="12" height="16"/>
+    </resources>
+</document>

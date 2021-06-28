@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="TotalOrderProcessCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yK-oB-S08">
+                        <rect key="frame" x="11" y="0.0" width="341" height="63.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jms-FD-9Sc">
+                                <rect key="frame" x="15" y="10" width="30.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rp. 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whg-lD-jtV">
+                                <rect key="frame" x="15" y="31.5" width="147" height="22"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rCS-oB-HRE">
+                                <rect key="frame" x="172" y="12" width="154" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KTh-ge-vLK"/>
+                                    <constraint firstAttribute="width" priority="750" constant="154" id="hRV-b6-6o4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                                <state key="normal" title="Process">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="processButtonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hCP-nm-qii"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rCS-oB-HRE" firstAttribute="centerY" secondItem="9yK-oB-S08" secondAttribute="centerY" id="H1s-cU-EZc"/>
+                            <constraint firstItem="rCS-oB-HRE" firstAttribute="leading" secondItem="whg-lD-jtV" secondAttribute="trailing" constant="10" id="K77-6I-HGR"/>
+                            <constraint firstItem="Jms-FD-9Sc" firstAttribute="leading" secondItem="9yK-oB-S08" secondAttribute="leading" constant="15" id="PYX-GF-JB4"/>
+                            <constraint firstItem="Jms-FD-9Sc" firstAttribute="top" secondItem="9yK-oB-S08" secondAttribute="top" constant="10" id="Ti3-hF-uiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="rCS-oB-HRE" secondAttribute="trailing" constant="15" id="ekB-nS-F8e"/>
+                            <constraint firstItem="whg-lD-jtV" firstAttribute="top" secondItem="Jms-FD-9Sc" secondAttribute="bottom" constant="2" id="hG3-45-VH6"/>
+                            <constraint firstItem="whg-lD-jtV" firstAttribute="leading" secondItem="9yK-oB-S08" secondAttribute="leading" constant="15" id="nLF-Ot-oXb"/>
+                            <constraint firstAttribute="bottom" secondItem="whg-lD-jtV" secondAttribute="bottom" constant="10" id="r19-N9-1bY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9yK-oB-S08" secondAttribute="bottom" id="HTO-P1-1Yw"/>
+                    <constraint firstItem="9yK-oB-S08" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="II1-u0-dAK"/>
+                    <constraint firstItem="9yK-oB-S08" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g7j-zi-QJd"/>
+                    <constraint firstAttribute="trailing" secondItem="9yK-oB-S08" secondAttribute="trailing" constant="11" id="tTE-Vh-fg0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="processButton" destination="rCS-oB-HRE" id="3eb-Sl-mC8"/>
+                <outlet property="totalPriceLabel" destination="whg-lD-jtV" id="OtD-FF-o5h"/>
+                <outlet property="totalTitleLabel" destination="Jms-FD-9Sc" id="4eU-VN-3VW"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="144.82758620689657"/>
+        </tableViewCell>
+    </objects>
+</document>

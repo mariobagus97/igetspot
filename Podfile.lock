@@ -1,0 +1,376 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
+  - Cache (5.2.0)
+  - Cosmos (18.0.1)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - CRRefresh (1.1.3)
+  - CryptoSwift (0.15.0)
+  - DKCamera (1.6.7)
+  - DKImagePickerController/Camera (4.1.2):
+    - DKCamera
+    - DKImagePickerController/Core
+  - DKImagePickerController/Core (4.1.2):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.1.2)
+  - DKImagePickerController/PhotoGallery (4.1.2):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.1.2)
+  - DKPhotoGallery (0.0.12):
+    - DKPhotoGallery/Core (= 0.0.12)
+    - DKPhotoGallery/Model (= 0.0.12)
+    - DKPhotoGallery/Preview (= 0.0.12)
+    - DKPhotoGallery/Resource (= 0.0.12)
+    - SDWebImage/GIF
+  - DKPhotoGallery/Core (0.0.12):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage/GIF
+  - DKPhotoGallery/Model (0.0.12):
+    - SDWebImage/GIF
+  - DKPhotoGallery/Preview (0.0.12):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage/GIF
+  - DKPhotoGallery/Resource (0.0.12):
+    - SDWebImage/GIF
+  - DLRadioButton (1.4.12)
+  - Fabric (1.10.2)
+  - FBSDKCoreKit (5.5.0):
+    - FBSDKCoreKit/Basics (= 5.5.0)
+    - FBSDKCoreKit/Core (= 5.5.0)
+  - FBSDKCoreKit/Basics (5.5.0)
+  - FBSDKCoreKit/Core (5.5.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.5.0):
+    - FBSDKCoreKit (~> 5.0)
+  - Firebase/Core (6.22.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.4.1)
+  - Firebase/CoreOnly (6.22.0):
+    - FirebaseCore (= 6.6.6)
+  - FirebaseAnalytics (6.4.1):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.1)
+    - GoogleAppMeasurement (= 6.4.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - FirebaseCore (6.6.6):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.3):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 2.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseInstallations (1.1.1):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+    - PromisesObjC (~> 1.2)
+  - FLAnimatedImage (1.0.12)
+  - FloatingPanel (1.7.4)
+  - FSCalendar (2.8.1)
+  - FSPagerView (0.8.2)
+  - GoogleAppMeasurement (6.4.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (5.1.1)
+  - GoogleDataTransportCCTSupport (2.0.2):
+    - GoogleDataTransport (~> 5.1)
+    - nanopb (~> 0.3.901)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (6.5.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.5.2)
+  - GoogleUtilities/Logger (6.5.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.5.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.5.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.5.2)"
+  - GoogleUtilities/Reachability (6.5.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.5.2):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
+  - InputBarAccessoryView (4.2.2)
+  - KeychainAccess (3.1.2)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - KMPlaceholderTextView (1.4.0)
+  - LGSideMenuController (2.1.1)
+  - Lightbox (2.3.0):
+    - Imaginary (~> 4.0)
+  - MessageKit (3.0.0):
+    - InputBarAccessoryView (~> 4.2.2)
+  - MXParallaxHeader (1.1.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - Parchment (1.7.0)
+  - PromisesObjC (1.2.8)
+  - PushNotifications (3.0.4)
+  - R.swift (5.0.0):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
+  - RNLoadingButton-Swift (5.1.0)
+  - SDVersion (4.3.2)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
+  - SDWebImage/GIF (4.4.4):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SendBirdSDK (3.0.177)
+  - SkeletonView (1.8.7)
+  - SkyFloatingLabelTextField (3.6.0)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftDate (6.1.0)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+  - SwiftyJSON (4.2.0)
+  - TPKeyboardAvoiding (1.3.2)
+  - TTRangeSlider (1.0.6)
+  - Version (0.7.3)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.0)
+  - Cosmos (= 18.0.1)
+  - Crashlytics
+  - CRRefresh
+  - CryptoSwift (= 0.15.0)
+  - DKImagePickerController/Camera (= 4.1.2)
+  - DKImagePickerController/PhotoGallery (= 4.1.2)
+  - DLRadioButton (~> 1.4.12)
+  - Fabric
+  - FBSDKCoreKit (= 5.5.0)
+  - FBSDKLoginKit (= 5.5.0)
+  - Firebase/Core
+  - FloatingPanel
+  - FSCalendar
+  - FSPagerView (= 0.8.2)
+  - GoogleMaps
+  - GooglePlaces
+  - GoogleSignIn (= 5.0.2)
+  - KeychainAccess (= 3.1.2)
+  - Kingfisher
+  - KMPlaceholderTextView (~> 1.4.0)
+  - LGSideMenuController (= 2.1.1)
+  - Lightbox (= 2.3.0)
+  - MessageKit (= 3.0.0)
+  - MXParallaxHeader
+  - Parchment (= 1.7.0)
+  - PushNotifications
+  - R.swift (= 5.0.0)
+  - RealmSwift (= 3.19.0)
+  - RNLoadingButton-Swift
+  - SDVersion
+  - SDWebImage (= 4.4.4)
+  - SendBirdSDK
+  - SkeletonView
+  - SkyFloatingLabelTextField (~> 3.6.0)
+  - SnapKit (= 4.2.0)
+  - SVProgressHUD (from `https://github.com/mnizar/SVProgressHUD.git`, branch `customgradients`)
+  - SwiftDate
+  - SwiftMessages (~> 6.0.2)
+  - SwiftyJSON (= 4.2.0)
+  - TPKeyboardAvoiding (= 1.3.2)
+  - TTRangeSlider
+  - Version
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppAuth
+    - Cache
+    - Cosmos
+    - Crashlytics
+    - CRRefresh
+    - CryptoSwift
+    - DKCamera
+    - DKImagePickerController
+    - DKPhotoGallery
+    - DLRadioButton
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstallations
+    - FLAnimatedImage
+    - FloatingPanel
+    - FSCalendar
+    - FSPagerView
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - Imaginary
+    - InputBarAccessoryView
+    - KeychainAccess
+    - Kingfisher
+    - KMPlaceholderTextView
+    - LGSideMenuController
+    - Lightbox
+    - MessageKit
+    - MXParallaxHeader
+    - nanopb
+    - Parchment
+    - PromisesObjC
+    - PushNotifications
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - RNLoadingButton-Swift
+    - SDVersion
+    - SDWebImage
+    - SendBirdSDK
+    - SkeletonView
+    - SkyFloatingLabelTextField
+    - SnapKit
+    - SwiftDate
+    - SwiftMessages
+    - SwiftyJSON
+    - TPKeyboardAvoiding
+    - TTRangeSlider
+    - Version
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :branch: customgradients
+    :git: https://github.com/mnizar/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 5a99af77b00213358046b14bb05780d8106a38a0
+    :git: https://github.com/mnizar/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
+  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
+  DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
+  DKImagePickerController: 358ebcd5ce87db8863ec4b8dea651c67baca36e0
+  DKPhotoGallery: 1b4d65d9a485dfdd2002f22daa5b955eafb350ea
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  FBSDKCoreKit: 7ade9cfea30eef2f6cf105a1aa904f89ea68fb7d
+  FBSDKLoginKit: bb28062f24e79590c44ba03297ca9bea4b6436d2
+  Firebase: 32f9520684e87c7af3f0704f7f88042626d6b536
+  FirebaseAnalytics: 83f822fd0d33a46f49f89b8c3ab16ab4d89df08a
+  FirebaseCore: 9aca0f1fffb405176ba15311a5621fcde4106fcf
+  FirebaseCoreDiagnostics: 13a6564cd6d5375066bbc8940cc1753af24497f3
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseInstallations: acb3216eb9784d3b1d2d2d635ff74fa892cc0c44
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FloatingPanel: 3c9d0e30fe350e1613157557769d2ec97f76b96b
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  GoogleAppMeasurement: e49be3954045b17d046f271b9cc1ec052bad9702
+  GoogleDataTransport: 6ffa4dd0b6d547f8d27b91bd92fa9e197a3f5f1f
+  GoogleDataTransportCCTSupport: 12f02e5c8f09c055615de90bcd5ba2c375546051
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
+  InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  Lightbox: d317750e4132bfb871a5307cfe0a2c7d6a583c65
+  MessageKit: e892a9ca49ebe6d82684d3a93ad84021fa23e2c6
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PushNotifications: 6e3d148e5e129af9d4a9279b288c934f9a7f9066
+  R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
+  RNLoadingButton-Swift: 7e38fb4f395062b6902e70d29e6d42abe2e51e32
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+  SendBirdSDK: 7e271e1945ac82dd8c504406c5e04947577d524b
+  SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+  TTRangeSlider: 78188bea83f6471a06f75adbc88da5e990baeafe
+  Version: 6a785d82131b1fa82e747ddd78631ab56dd679ff
+
+PODFILE CHECKSUM: 25006a3e5b1ac97e0f679a61e67ee2f9d622e6fe
+
+COCOAPODS: 1.9.3

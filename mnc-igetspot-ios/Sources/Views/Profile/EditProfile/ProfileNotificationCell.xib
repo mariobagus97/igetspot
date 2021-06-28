@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileNotificationCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-31-ezT">
+                    <rect key="frame" x="20" y="0.0" width="318" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-Rb-h9h">
+                            <rect key="frame" x="0.0" y="27" width="27" height="17"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEa-YD-LNV">
+                            <rect key="frame" x="249" y="19.5" width="51" height="31"/>
+                        </switch>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7D-Hp-ope">
+                            <rect key="frame" x="0.0" y="69" width="318" height="1"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="eWJ-o0-tqo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nEa-YD-LNV" secondAttribute="trailing" constant="20" id="3ci-Aa-D2x"/>
+                        <constraint firstItem="Ada-Rb-h9h" firstAttribute="leading" secondItem="dLi-31-ezT" secondAttribute="leading" id="H3N-Eg-4kn"/>
+                        <constraint firstAttribute="trailing" secondItem="z7D-Hp-ope" secondAttribute="trailing" id="S65-oL-MCA"/>
+                        <constraint firstAttribute="bottom" secondItem="z7D-Hp-ope" secondAttribute="bottom" id="kUu-v5-gRH"/>
+                        <constraint firstItem="Ada-Rb-h9h" firstAttribute="centerY" secondItem="dLi-31-ezT" secondAttribute="centerY" id="pWt-LL-BRC"/>
+                        <constraint firstItem="z7D-Hp-ope" firstAttribute="leading" secondItem="dLi-31-ezT" secondAttribute="leading" id="peg-W4-m4T"/>
+                        <constraint firstItem="nEa-YD-LNV" firstAttribute="centerY" secondItem="dLi-31-ezT" secondAttribute="centerY" id="rpg-hV-OHi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dLi-31-ezT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BFu-vN-ydi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dLi-31-ezT" secondAttribute="trailing" id="Eju-wk-czx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dLi-31-ezT" secondAttribute="bottom" id="Z9t-EV-JkN"/>
+                <constraint firstItem="dLi-31-ezT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ntI-qg-LCU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="notifLabel" destination="Ada-Rb-h9h" id="WjQ-Ic-Qxp"/>
+                <outlet property="notifSwitch" destination="nEa-YD-LNV" id="i6y-n9-ESr"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="-232"/>
+        </view>
+    </objects>
+</document>

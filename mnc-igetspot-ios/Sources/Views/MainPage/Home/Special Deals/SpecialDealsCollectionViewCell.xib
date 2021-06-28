@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="SpecialDealsCollectionViewCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="398"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh5-A9-6An">
+                    <rect key="frame" x="0.0" y="0.0" width="634" height="398"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eRR-ys-oln">
+                            <rect key="frame" x="0.0" y="0.0" width="634" height="398"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5a-PT-WpH">
+                            <rect key="frame" x="0.0" y="0.0" width="634" height="398"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Package" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h8-54-hKR">
+                            <rect key="frame" x="14" y="290" width="139" height="22"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEB-Rv-WsW" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="9" y="359" width="170.5" height="24"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="170" id="2T7-qJ-auh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-q4-MTx">
+                            <rect key="frame" x="14" y="312" width="520" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="Qga-f2-q4P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nQ-oz-gcy">
+                            <rect key="frame" x="561" y="363" width="55" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="hv0-Up-nud"/>
+                                <constraint firstAttribute="width" constant="55" id="ky9-fI-V7z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aEB-Rv-WsW" firstAttribute="leading" secondItem="Jh5-A9-6An" secondAttribute="leading" constant="9" id="290-gw-fL5"/>
+                        <constraint firstItem="eRR-ys-oln" firstAttribute="leading" secondItem="Jh5-A9-6An" secondAttribute="leading" id="6SB-2r-lER"/>
+                        <constraint firstAttribute="trailing" secondItem="eRR-ys-oln" secondAttribute="trailing" id="9yV-Sh-IUc"/>
+                        <constraint firstAttribute="bottom" secondItem="H5a-PT-WpH" secondAttribute="bottom" id="BpZ-wX-GKv"/>
+                        <constraint firstItem="H5a-PT-WpH" firstAttribute="top" secondItem="Jh5-A9-6An" secondAttribute="top" id="Ief-fZ-te2"/>
+                        <constraint firstItem="9nQ-oz-gcy" firstAttribute="top" secondItem="cTi-q4-MTx" secondAttribute="bottom" constant="12" id="KCk-M1-X4W"/>
+                        <constraint firstAttribute="trailing" secondItem="cTi-q4-MTx" secondAttribute="trailing" constant="100" id="LCc-Wx-3HW"/>
+                        <constraint firstAttribute="bottom" secondItem="eRR-ys-oln" secondAttribute="bottom" id="MU2-Tj-kfu"/>
+                        <constraint firstAttribute="trailing" secondItem="9nQ-oz-gcy" secondAttribute="trailing" constant="18" id="O4m-Qm-C5e"/>
+                        <constraint firstItem="9nQ-oz-gcy" firstAttribute="top" secondItem="H5a-PT-WpH" secondAttribute="bottom" constant="-35" id="b35-hw-MRf"/>
+                        <constraint firstItem="cTi-q4-MTx" firstAttribute="leading" secondItem="Jh5-A9-6An" secondAttribute="leading" constant="14" id="ep1-dZ-A4S"/>
+                        <constraint firstItem="H5a-PT-WpH" firstAttribute="leading" secondItem="Jh5-A9-6An" secondAttribute="leading" id="gIU-qC-07H"/>
+                        <constraint firstAttribute="trailing" secondItem="H5a-PT-WpH" secondAttribute="trailing" id="kwo-dy-SOA"/>
+                        <constraint firstItem="aEB-Rv-WsW" firstAttribute="top" secondItem="cTi-q4-MTx" secondAttribute="bottom" constant="8" id="l4O-N7-W0b"/>
+                        <constraint firstItem="4h8-54-hKR" firstAttribute="leading" secondItem="Jh5-A9-6An" secondAttribute="leading" constant="14" id="pEy-sT-y9u"/>
+                        <constraint firstItem="cTi-q4-MTx" firstAttribute="top" secondItem="4h8-54-hKR" secondAttribute="bottom" id="t2X-Fm-Jwo"/>
+                        <constraint firstItem="9nQ-oz-gcy" firstAttribute="leading" secondItem="aEB-Rv-WsW" secondAttribute="trailing" priority="750" constant="18" id="t5B-oX-juM"/>
+                        <constraint firstItem="eRR-ys-oln" firstAttribute="top" secondItem="Jh5-A9-6An" secondAttribute="top" id="x2H-ri-upW"/>
+                        <constraint firstAttribute="bottom" secondItem="aEB-Rv-WsW" secondAttribute="bottom" constant="15" id="xNo-hJ-edA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jh5-A9-6An" secondAttribute="trailing" id="D0D-Jg-csa"/>
+                <constraint firstAttribute="bottom" secondItem="Jh5-A9-6An" secondAttribute="bottom" id="aBm-TN-sMq"/>
+                <constraint firstItem="Jh5-A9-6An" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qIv-Nf-InJ"/>
+                <constraint firstItem="Jh5-A9-6An" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uAh-i6-cgU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="Jh5-A9-6An" id="bbm-Ti-KFh"/>
+                <outlet property="cosmosView" destination="aEB-Rv-WsW" id="Mnj-0p-jvW"/>
+                <outlet property="dealTotal" destination="9nQ-oz-gcy" id="TXr-AZ-zML"/>
+                <outlet property="dealsDescLabel" destination="cTi-q4-MTx" id="leD-cN-hWV"/>
+                <outlet property="dealsImageView" destination="eRR-ys-oln" id="iaj-zp-gDL"/>
+                <outlet property="dealsNameLabel" destination="4h8-54-hKR" id="e3g-DZ-VDE"/>
+                <outlet property="gradientView" destination="H5a-PT-WpH" id="Cdh-UP-iWk"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="-48"/>
+        </view>
+    </objects>
+</document>

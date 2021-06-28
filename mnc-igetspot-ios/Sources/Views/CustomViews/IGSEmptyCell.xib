@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="486" id="KGk-i7-Jjw" customClass="IGSEmptyCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="464"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="463.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnC-EG-gvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="463.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyData" translatesAutoresizingMaskIntoConstraints="NO" id="I8g-Hc-Hds">
+                                <rect key="frame" x="64" y="50" width="192" height="153.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I8g-Hc-Hds" secondAttribute="height" multiplier="5:4" id="BFT-nk-kKE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-SH-ZPR">
+                                <rect key="frame" x="64" y="213.5" width="192" height="72"/>
+                                <string key="text">You don’t have 
+any history of transactions</string>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Start searching and doing business with us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-Pz-f6e">
+                                <rect key="frame" x="20" y="300.5" width="280" height="33"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vk2-e9-EvO">
+                                <rect key="frame" x="30" y="373.5" width="260" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TLp-yr-9tw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pcR-cD-fe8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aLW-Pz-f6e" firstAttribute="top" secondItem="kdk-SH-ZPR" secondAttribute="bottom" constant="15" id="4bx-1S-Rqe"/>
+                            <constraint firstItem="aLW-Pz-f6e" firstAttribute="leading" secondItem="bnC-EG-gvc" secondAttribute="leading" constant="20" id="8Mn-pG-TEE"/>
+                            <constraint firstItem="I8g-Hc-Hds" firstAttribute="top" secondItem="bnC-EG-gvc" secondAttribute="top" constant="50" id="FK4-hS-5gz"/>
+                            <constraint firstAttribute="bottom" secondItem="vk2-e9-EvO" secondAttribute="bottom" constant="50" id="G74-tL-YDX"/>
+                            <constraint firstItem="kdk-SH-ZPR" firstAttribute="top" secondItem="I8g-Hc-Hds" secondAttribute="bottom" constant="10" id="QeM-3Z-eT4"/>
+                            <constraint firstAttribute="trailing" secondItem="vk2-e9-EvO" secondAttribute="trailing" constant="30" id="f6q-MT-zk9"/>
+                            <constraint firstItem="I8g-Hc-Hds" firstAttribute="centerX" secondItem="bnC-EG-gvc" secondAttribute="centerX" id="fNL-n2-7rg"/>
+                            <constraint firstItem="vk2-e9-EvO" firstAttribute="centerX" secondItem="bnC-EG-gvc" secondAttribute="centerX" id="gI6-Pl-aEf"/>
+                            <constraint firstItem="vk2-e9-EvO" firstAttribute="top" secondItem="aLW-Pz-f6e" secondAttribute="bottom" constant="40" id="kuJ-O3-uif"/>
+                            <constraint firstItem="I8g-Hc-Hds" firstAttribute="width" secondItem="bnC-EG-gvc" secondAttribute="width" multiplier="0.6" id="mhS-JD-jM8"/>
+                            <constraint firstItem="kdk-SH-ZPR" firstAttribute="width" secondItem="I8g-Hc-Hds" secondAttribute="width" id="pJ8-Mn-3hn"/>
+                            <constraint firstItem="kdk-SH-ZPR" firstAttribute="centerX" secondItem="bnC-EG-gvc" secondAttribute="centerX" id="pN3-r6-87k"/>
+                            <constraint firstAttribute="trailing" secondItem="aLW-Pz-f6e" secondAttribute="trailing" constant="20" id="rVU-Sr-Q4z"/>
+                            <constraint firstItem="vk2-e9-EvO" firstAttribute="leading" secondItem="bnC-EG-gvc" secondAttribute="leading" constant="30" id="yXU-zb-H5D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bnC-EG-gvc" secondAttribute="trailing" id="5cJ-cm-7T8"/>
+                    <constraint firstItem="bnC-EG-gvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SgF-7n-vzW"/>
+                    <constraint firstItem="bnC-EG-gvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="r42-ue-k4E"/>
+                    <constraint firstAttribute="bottom" secondItem="bnC-EG-gvc" secondAttribute="bottom" id="xgE-i0-kSQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="vk2-e9-EvO" id="E5e-je-MSg"/>
+                <outlet property="descLabel" destination="aLW-Pz-f6e" id="RN0-5t-XA3"/>
+                <outlet property="iconImageView" destination="I8g-Hc-Hds" id="CaI-Jg-rvw"/>
+                <outlet property="titleLabel" destination="kdk-SH-ZPR" id="pK3-MW-huz"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="186.20689655172416"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="emptyData" width="223" height="174"/>
+    </resources>
+</document>

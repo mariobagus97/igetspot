@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UG1-7B-DcW" customClass="MasterDetailPackageTableViewCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UG1-7B-DcW" id="T87-YV-au5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="194.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8O-QC-AtL" customClass="MasterDetailPackageCollectionView" customModule="I_get_Spot" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="54" width="320" height="140.66666666666666"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv5-qv-sJZ">
+                        <rect key="frame" x="30" y="27" width="270" height="17"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cv5-qv-sJZ" firstAttribute="top" secondItem="T87-YV-au5" secondAttribute="top" constant="27" id="NYV-td-8Mx"/>
+                    <constraint firstItem="e8O-QC-AtL" firstAttribute="leading" secondItem="T87-YV-au5" secondAttribute="leading" id="OFV-sd-4Mg"/>
+                    <constraint firstItem="Cv5-qv-sJZ" firstAttribute="leading" secondItem="T87-YV-au5" secondAttribute="leading" constant="30" id="Rqw-09-XiF"/>
+                    <constraint firstAttribute="trailing" secondItem="e8O-QC-AtL" secondAttribute="trailing" id="X5f-o7-5YV"/>
+                    <constraint firstAttribute="trailing" secondItem="Cv5-qv-sJZ" secondAttribute="trailing" constant="20" id="szx-YD-G6g"/>
+                    <constraint firstItem="e8O-QC-AtL" firstAttribute="top" secondItem="Cv5-qv-sJZ" secondAttribute="bottom" constant="10" id="trJ-3M-712"/>
+                    <constraint firstAttribute="bottom" secondItem="e8O-QC-AtL" secondAttribute="bottom" id="wgn-gn-S3u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="masterDetailCollectionView" destination="e8O-QC-AtL" id="IkK-Yg-kL3"/>
+                <outlet property="titleLabel" destination="Cv5-qv-sJZ" id="mku-bZ-jvf"/>
+            </connections>
+            <point key="canvasLocation" x="171.19999999999999" y="202.84857571214394"/>
+        </tableViewCell>
+    </objects>
+</document>

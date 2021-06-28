@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="MenuSocialMediaCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fca-hb-Lp6">
+                        <rect key="frame" x="40" y="40.5" width="175" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-ka-zJ4">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lba-g4-UJu"/>
+                                    <constraint firstAttribute="width" constant="25" id="mml-Sa-dV0"/>
+                                </constraints>
+                                <state key="normal" image="connectFb"/>
+                                <connections>
+                                    <action selector="facebookButtonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dVO-BK-iTM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVd-VT-BPo">
+                                <rect key="frame" x="50" y="0.0" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="K5K-YL-Arn"/>
+                                    <constraint firstAttribute="width" constant="25" id="xHU-ap-jfe"/>
+                                </constraints>
+                                <state key="normal" image="connectTwitter"/>
+                                <connections>
+                                    <action selector="twitterButtonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QW3-em-vGx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-NB-bEr">
+                                <rect key="frame" x="100" y="0.0" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="F4q-zV-bme"/>
+                                    <constraint firstAttribute="width" constant="25" id="vW2-SZ-OSa"/>
+                                </constraints>
+                                <state key="normal" image="connectIG"/>
+                                <connections>
+                                    <action selector="instagramButtonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ue9-Gk-KAz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VU-XH-Bqd">
+                                <rect key="frame" x="150" y="0.0" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Rrp-gP-sp5"/>
+                                    <constraint firstAttribute="height" constant="25" id="aGf-n6-jGU"/>
+                                </constraints>
+                                <state key="normal" image="connectYoutube"/>
+                                <connections>
+                                    <action selector="youtubeButtonDidClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LzV-4L-YO4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect With Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuZ-Ih-MpC">
+                        <rect key="frame" x="40" y="15" width="265" height="5.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="fca-hb-Lp6" firstAttribute="top" secondItem="NuZ-Ih-MpC" secondAttribute="bottom" constant="20" id="FMz-vb-NXh"/>
+                    <constraint firstItem="fca-hb-Lp6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Kbx-0F-MP4"/>
+                    <constraint firstAttribute="bottom" secondItem="fca-hb-Lp6" secondAttribute="bottom" constant="10" id="SL6-Dh-uwN"/>
+                    <constraint firstAttribute="trailing" secondItem="NuZ-Ih-MpC" secondAttribute="trailing" constant="15" id="bSM-mg-n72"/>
+                    <constraint firstItem="NuZ-Ih-MpC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rdh-hB-kcx"/>
+                    <constraint firstItem="NuZ-Ih-MpC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="tge-Qe-oGg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="facebookButton" destination="ay4-ka-zJ4" id="qpg-Ny-fVa"/>
+                <outlet property="instagramButton" destination="JfQ-NB-bEr" id="p9u-Hj-nVv"/>
+                <outlet property="twitterButton" destination="iVd-VT-BPo" id="9ap-rz-63p"/>
+                <outlet property="youtubeButton" destination="8VU-XH-Bqd" id="VjC-Fa-UM3"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="149.32533733133434"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="connectFb" width="25" height="25"/>
+        <image name="connectIG" width="25" height="25"/>
+        <image name="connectTwitter" width="25" height="25"/>
+        <image name="connectYoutube" width="25" height="25"/>
+    </resources>
+</document>

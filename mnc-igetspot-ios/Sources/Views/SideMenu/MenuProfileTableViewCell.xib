@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-Gp-zYx">
+                    <rect key="frame" x="30" y="90" width="79" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="1Sa-Ef-Ano"/>
+                        <constraint firstAttribute="height" constant="85" id="R9n-h9-pmr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MNC Innovation Center Bandung Jakarta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83a-2o-ZEq">
+                    <rect key="frame" x="129" y="90" width="347" height="58"/>
+                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ballance: Rp 1.000.000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhK-aF-tse">
+                    <rect key="frame" x="129" y="159" width="220" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="9de-OL-asi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAv-6O-oyh">
+                    <rect key="frame" x="440" y="36" width="19" height="22"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="1fF-wv-nPL"/>
+                        <constraint firstAttribute="width" constant="19" id="ChW-Is-SgB"/>
+                    </constraints>
+                    <state key="normal" image="icHideMenu"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="83a-2o-ZEq" firstAttribute="leading" secondItem="aA7-Gp-zYx" secondAttribute="trailing" constant="20" id="A7W-wi-q2Q"/>
+                <constraint firstItem="aA7-Gp-zYx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Ar0-Lz-tSZ"/>
+                <constraint firstItem="BhK-aF-tse" firstAttribute="leading" secondItem="aA7-Gp-zYx" secondAttribute="trailing" constant="20" id="MMU-6i-CXn"/>
+                <constraint firstItem="BhK-aF-tse" firstAttribute="top" secondItem="83a-2o-ZEq" secondAttribute="bottom" constant="11" id="NeD-lw-LmS"/>
+                <constraint firstItem="83a-2o-ZEq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="90" id="QYB-iy-3Ui"/>
+                <constraint firstItem="bAv-6O-oyh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="SoT-0u-VfY"/>
+                <constraint firstAttribute="trailing" secondItem="83a-2o-ZEq" secondAttribute="trailing" constant="15" id="aiZ-cl-gbR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bAv-6O-oyh" secondAttribute="trailing" constant="32" id="thB-vZ-bPE"/>
+                <constraint firstItem="aA7-Gp-zYx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="90" id="y0w-Vt-fIf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="3.5" y="-168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icHideMenu" width="19" height="17"/>
+    </resources>
+</document>

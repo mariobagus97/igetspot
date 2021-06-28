@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="dEi-e4-Haf" customClass="MySpotOrderInformationCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dEi-e4-Haf" id="eVI-aJ-abG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpA-03-W43">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-Bi-L1n">
+                                <rect key="frame" x="0.0" y="90.5" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.90980392160000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ad6-ZF-sl4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-by-z45">
+                                <rect key="frame" x="20" y="15" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-7L-0XG">
+                                <rect key="frame" x="20" y="25" width="280" height="45.5"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dIp-7L-0XG" secondAttribute="trailing" constant="20" id="0kb-OK-vMR"/>
+                            <constraint firstAttribute="trailing" secondItem="dIp-7L-0XG" secondAttribute="trailing" constant="20" id="2BE-ej-7ex"/>
+                            <constraint firstAttribute="trailing" secondItem="tgO-Bi-L1n" secondAttribute="trailing" id="Ggh-bm-klx"/>
+                            <constraint firstItem="dIp-7L-0XG" firstAttribute="top" secondItem="fNf-by-z45" secondAttribute="bottom" constant="10" id="HFi-sj-Xws"/>
+                            <constraint firstItem="fNf-by-z45" firstAttribute="top" secondItem="vpA-03-W43" secondAttribute="top" constant="15" id="Pis-nd-JHh"/>
+                            <constraint firstAttribute="bottom" secondItem="tgO-Bi-L1n" secondAttribute="bottom" id="S5Y-5N-Daj"/>
+                            <constraint firstItem="tgO-Bi-L1n" firstAttribute="top" secondItem="dIp-7L-0XG" secondAttribute="bottom" constant="20" id="VJR-O4-cbx"/>
+                            <constraint firstItem="tgO-Bi-L1n" firstAttribute="leading" secondItem="vpA-03-W43" secondAttribute="leading" id="YmC-hl-FXi"/>
+                            <constraint firstItem="fNf-by-z45" firstAttribute="leading" secondItem="vpA-03-W43" secondAttribute="leading" constant="20" id="p1V-uC-0Fc"/>
+                            <constraint firstItem="dIp-7L-0XG" firstAttribute="leading" secondItem="vpA-03-W43" secondAttribute="leading" constant="20" id="qz2-xJ-UcN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vpA-03-W43" secondAttribute="bottom" id="Nzt-Ie-aE5"/>
+                    <constraint firstAttribute="trailing" secondItem="vpA-03-W43" secondAttribute="trailing" id="boI-wF-nhy"/>
+                    <constraint firstItem="vpA-03-W43" firstAttribute="top" secondItem="eVI-aJ-abG" secondAttribute="top" id="c9O-Ey-bbi"/>
+                    <constraint firstItem="vpA-03-W43" firstAttribute="leading" secondItem="eVI-aJ-abG" secondAttribute="leading" id="xe2-eP-Bih"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aiA-yR-Hm3"/>
+            <connections>
+                <outlet property="separatorView" destination="tgO-Bi-L1n" id="3jh-db-g6z"/>
+                <outlet property="titleLabel" destination="fNf-by-z45" id="zcu-UY-98B"/>
+                <outlet property="valueLabel" destination="dIp-7L-0XG" id="1zf-QQ-AdO"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+</document>

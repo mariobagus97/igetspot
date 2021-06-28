@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MasterDetailReviewListCell" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuK-hD-18F">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="157"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="56T-Lx-djq">
+                            <rect key="frame" x="35" y="20" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.1476966116" green="0.36173461289999997" blue="0.012367332369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2lx-MR-4YY"/>
+                                <constraint firstAttribute="width" constant="40" id="bIS-6Z-mBo"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-BA-6mc" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="90" y="19" width="80" height="13"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="yI4-m5-Wfw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="starYellowSmall"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="starGreySmall"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Mrs Jackson" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWK-Mf-zec">
+                            <rect key="frame" x="90" y="38" width="220" height="22.5"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client from previous job: High school reunion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-cx-XtW">
+                            <rect key="frame" x="90" y="66.5" width="285" height="13.5"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="2 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkw-9F-Dyz">
+                            <rect key="frame" x="325" y="38" width="50" height="14"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKW-Nq-dJ0">
+                            <rect key="frame" x="35" y="156" width="360" height="1"/>
+                            <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Egj-Ou-Lwp"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-fZ-AC0">
+                            <rect key="frame" x="35" y="95" width="340" height="43.5"/>
+                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna augue, condimentum sed lacus eu, feugiat faucibus enim. Proin pretium orci a tristique porttitor.</string>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KLX-BA-6mc" firstAttribute="leading" secondItem="56T-Lx-djq" secondAttribute="trailing" constant="15" id="2gX-Pi-NaX"/>
+                        <constraint firstAttribute="trailing" secondItem="DQh-fZ-AC0" secondAttribute="trailing" constant="20" id="AhE-iY-fXd"/>
+                        <constraint firstAttribute="trailing" secondItem="7GB-cx-XtW" secondAttribute="trailing" constant="20" id="AyT-YS-wZ2"/>
+                        <constraint firstItem="Dkw-9F-Dyz" firstAttribute="leading" secondItem="QWK-Mf-zec" secondAttribute="trailing" constant="15" id="B0y-3E-qRF"/>
+                        <constraint firstItem="DQh-fZ-AC0" firstAttribute="top" secondItem="7GB-cx-XtW" secondAttribute="bottom" constant="15" id="BQk-xk-4JT"/>
+                        <constraint firstItem="56T-Lx-djq" firstAttribute="top" secondItem="IuK-hD-18F" secondAttribute="top" constant="20" id="KoD-r1-d6m"/>
+                        <constraint firstAttribute="trailing" secondItem="oKW-Nq-dJ0" secondAttribute="trailing" id="LYZ-qD-U7v"/>
+                        <constraint firstItem="KLX-BA-6mc" firstAttribute="top" secondItem="IuK-hD-18F" secondAttribute="top" constant="19" id="NpT-QA-gkK"/>
+                        <constraint firstItem="DQh-fZ-AC0" firstAttribute="leading" secondItem="IuK-hD-18F" secondAttribute="leading" constant="35" id="Ojn-zf-wDU"/>
+                        <constraint firstAttribute="bottom" secondItem="oKW-Nq-dJ0" secondAttribute="bottom" id="UXt-OR-xOY"/>
+                        <constraint firstItem="7GB-cx-XtW" firstAttribute="top" secondItem="QWK-Mf-zec" secondAttribute="bottom" constant="6" id="Wdf-lu-59o"/>
+                        <constraint firstItem="QWK-Mf-zec" firstAttribute="top" secondItem="KLX-BA-6mc" secondAttribute="bottom" constant="6" id="Xql-YM-BE8"/>
+                        <constraint firstItem="QWK-Mf-zec" firstAttribute="leading" secondItem="56T-Lx-djq" secondAttribute="trailing" constant="15" id="dH1-ay-mwb"/>
+                        <constraint firstAttribute="bottom" secondItem="DQh-fZ-AC0" secondAttribute="bottom" constant="18.5" id="eHn-wg-Mfa"/>
+                        <constraint firstItem="7GB-cx-XtW" firstAttribute="leading" secondItem="56T-Lx-djq" secondAttribute="trailing" constant="15" id="g10-Vf-ckC"/>
+                        <constraint firstItem="Dkw-9F-Dyz" firstAttribute="top" secondItem="IuK-hD-18F" secondAttribute="top" constant="38" id="r1l-aL-VaB"/>
+                        <constraint firstAttribute="trailing" secondItem="Dkw-9F-Dyz" secondAttribute="trailing" constant="20" id="rPl-UQ-uUi"/>
+                        <constraint firstItem="56T-Lx-djq" firstAttribute="leading" secondItem="IuK-hD-18F" secondAttribute="leading" constant="35" id="vrz-BT-kmf"/>
+                        <constraint firstItem="oKW-Nq-dJ0" firstAttribute="leading" secondItem="IuK-hD-18F" secondAttribute="leading" constant="35" id="yqm-d8-e2a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IuK-hD-18F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7nX-7L-ism"/>
+                <constraint firstItem="IuK-hD-18F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="88g-LU-nvq"/>
+                <constraint firstAttribute="bottom" secondItem="IuK-hD-18F" secondAttribute="bottom" id="nD2-sX-Ubj"/>
+                <constraint firstItem="IuK-hD-18F" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="woE-Ns-x7f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="clientFromLabel" destination="7GB-cx-XtW" id="chI-5c-gYA"/>
+                <outlet property="containerView" destination="IuK-hD-18F" id="FgM-kZ-2ht"/>
+                <outlet property="dateRateGivenLabel" destination="Dkw-9F-Dyz" id="zUN-fx-nhR"/>
+                <outlet property="rateGivenCosmosView" destination="KLX-BA-6mc" id="m1D-if-szp"/>
+                <outlet property="userNameLabel" destination="QWK-Mf-zec" id="rRJ-Ea-LRG"/>
+                <outlet property="userReviewImageView" destination="56T-Lx-djq" id="qmj-ll-lDC"/>
+                <outlet property="userReviewtextView" destination="DQh-fZ-AC0" id="1WA-46-hYE"/>
+            </connections>
+            <point key="canvasLocation" x="43.5" y="-201.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="starGreySmall" width="13" height="12"/>
+        <image name="starYellowSmall" width="13" height="12"/>
+    </resources>
+</document>

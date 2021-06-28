@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CategoryDetailParallaxHeader" customModule="I_get_Spot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-vs-UOP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g6r-qo-aqW">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            <color key="backgroundColor" red="0.81568627449999997" green="0.83137254900000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsX-Sk-fBD">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="safeArea" id="HPN-J7-FBl"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1y-Em-yzh">
+                            <rect key="frame" x="20" y="156" width="112" height="24"/>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="g6r-qo-aqW" secondAttribute="trailing" id="Cgk-Ey-gCl"/>
+                        <constraint firstItem="qsX-Sk-fBD" firstAttribute="leading" secondItem="aqA-vs-UOP" secondAttribute="leading" id="DG8-DC-pq5"/>
+                        <constraint firstItem="g6r-qo-aqW" firstAttribute="leading" secondItem="aqA-vs-UOP" secondAttribute="leading" id="Ixq-85-hGA"/>
+                        <constraint firstAttribute="bottom" secondItem="D1y-Em-yzh" secondAttribute="bottom" constant="20" id="Q49-8H-LCY"/>
+                        <constraint firstAttribute="bottom" secondItem="qsX-Sk-fBD" secondAttribute="bottom" id="UH0-Rx-NX7"/>
+                        <constraint firstItem="g6r-qo-aqW" firstAttribute="top" secondItem="aqA-vs-UOP" secondAttribute="top" id="UsQ-gx-to0"/>
+                        <constraint firstItem="D1y-Em-yzh" firstAttribute="leading" secondItem="aqA-vs-UOP" secondAttribute="leading" constant="20" id="k0F-8o-0ZK"/>
+                        <constraint firstAttribute="bottom" secondItem="g6r-qo-aqW" secondAttribute="bottom" id="lny-J1-P3U"/>
+                        <constraint firstItem="qsX-Sk-fBD" firstAttribute="top" secondItem="aqA-vs-UOP" secondAttribute="top" id="wLe-5g-eyL"/>
+                        <constraint firstAttribute="trailing" secondItem="qsX-Sk-fBD" secondAttribute="trailing" id="yqJ-2t-1Qa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aqA-vs-UOP" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="1bE-U8-spL"/>
+                <constraint firstItem="aqA-vs-UOP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KYC-dC-MCx"/>
+                <constraint firstItem="aqA-vs-UOP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wBF-5l-5AL"/>
+                <constraint firstAttribute="bottom" secondItem="aqA-vs-UOP" secondAttribute="bottom" id="zLh-rY-u1U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="g6r-qo-aqW" id="XSZ-5L-HGR"/>
+                <outlet property="overlayView" destination="qsX-Sk-fBD" id="MAE-Pk-eGq"/>
+                <outlet property="titleLabel" destination="D1y-Em-yzh" id="02j-5h-8QN"/>
+            </connections>
+            <point key="canvasLocation" x="81.599999999999994" y="-159.22038980509745"/>
+        </view>
+    </objects>
+</document>

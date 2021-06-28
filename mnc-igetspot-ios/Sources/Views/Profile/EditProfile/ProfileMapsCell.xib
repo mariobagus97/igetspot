@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.otf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.otf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileMapsCell" customModule="mnc_igetspot_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="234"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yx-kl-hYj">
+                    <rect key="frame" x="20" y="0.0" width="316" height="234"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAU-2z-sAp">
+                            <rect key="frame" x="0.0" y="15" width="296" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" priority="750" constant="100" id="K7B-lp-2DP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Coordinate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgm-Gm-oZy">
+                            <rect key="frame" x="0.0" y="41.5" width="296" height="15"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJm-tz-f2d" customClass="GMSMapView">
+                            <rect key="frame" x="0.0" y="66.5" width="316" height="167.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="167.5" id="3UO-c0-Jbe"/>
+                                <constraint firstAttribute="width" secondItem="YJm-tz-f2d" secondAttribute="height" multiplier="316:167" id="cXU-gL-naa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Cgm-Gm-oZy" firstAttribute="leading" secondItem="5yx-kl-hYj" secondAttribute="leading" id="3OV-6i-Qdv"/>
+                        <constraint firstAttribute="trailing" secondItem="YJm-tz-f2d" secondAttribute="trailing" id="6GK-BV-Foa"/>
+                        <constraint firstAttribute="trailing" secondItem="pAU-2z-sAp" secondAttribute="trailing" constant="20" id="BEQ-fD-Rs5"/>
+                        <constraint firstItem="pAU-2z-sAp" firstAttribute="top" secondItem="5yx-kl-hYj" secondAttribute="top" constant="15" id="S2P-8F-3gS"/>
+                        <constraint firstAttribute="trailing" secondItem="Cgm-Gm-oZy" secondAttribute="trailing" constant="20" id="SA7-ZS-1hY"/>
+                        <constraint firstItem="pAU-2z-sAp" firstAttribute="leading" secondItem="5yx-kl-hYj" secondAttribute="leading" id="ZaQ-Yb-3d7"/>
+                        <constraint firstItem="YJm-tz-f2d" firstAttribute="leading" secondItem="5yx-kl-hYj" secondAttribute="leading" id="Zif-Xc-hL4"/>
+                        <constraint firstItem="YJm-tz-f2d" firstAttribute="top" secondItem="Cgm-Gm-oZy" secondAttribute="bottom" constant="10" id="gN2-eK-Itd"/>
+                        <constraint firstAttribute="bottom" secondItem="YJm-tz-f2d" secondAttribute="bottom" id="xeF-b1-mcc"/>
+                        <constraint firstItem="Cgm-Gm-oZy" firstAttribute="top" secondItem="pAU-2z-sAp" secondAttribute="bottom" constant="9.5" id="zOb-bb-yGJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5yx-kl-hYj" secondAttribute="bottom" id="R30-aa-iYb"/>
+                <constraint firstItem="5yx-kl-hYj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vdD-Lf-kDa"/>
+                <constraint firstItem="5yx-kl-hYj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wDS-fU-jMJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5yx-kl-hYj" secondAttribute="trailing" constant="15" id="zUT-hl-ydf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="googleMapView" destination="YJm-tz-f2d" id="q1h-Qt-4vo"/>
+                <outlet property="locationLabel" destination="pAU-2z-sAp" id="1F8-cb-big"/>
+                <outlet property="placeholderLabel" destination="Cgm-Gm-oZy" id="GDV-su-TUS"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="-150"/>
+        </view>
+    </objects>
+</document>

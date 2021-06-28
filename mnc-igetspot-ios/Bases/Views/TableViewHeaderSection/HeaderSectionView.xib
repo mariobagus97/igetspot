@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderSectionView" customModule="Metube" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="KE0-jL-v7q" id="wpO-df-V4o"/>
+                <outlet property="sectionActionButton" destination="CpL-PW-tEK" id="ekU-op-tl1"/>
+                <outlet property="sectionTitle" destination="nyI-LX-hGe" id="RRe-Kf-Azm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KE0-jL-v7q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-LX-hGe">
+                            <rect key="frame" x="10" y="15" width="55" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-PW-tEK">
+                            <rect key="frame" x="234" y="13.5" width="121" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="+ create playlist">
+                                <color key="titleColor" red="0.85882352939999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sectionActionButtonPressed:" destination="-1" eventType="touchUpInside" id="fsP-p2-6Yh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CpL-PW-tEK" firstAttribute="centerY" secondItem="KE0-jL-v7q" secondAttribute="centerY" id="1Hz-UY-zLA"/>
+                        <constraint firstAttribute="trailing" secondItem="CpL-PW-tEK" secondAttribute="trailing" constant="20" id="APD-CY-qM9"/>
+                        <constraint firstItem="nyI-LX-hGe" firstAttribute="top" secondItem="KE0-jL-v7q" secondAttribute="top" constant="15" id="Hr1-Rf-TB6"/>
+                        <constraint firstAttribute="bottom" secondItem="nyI-LX-hGe" secondAttribute="bottom" constant="15" id="vL9-jR-2z4"/>
+                        <constraint firstItem="CpL-PW-tEK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyI-LX-hGe" secondAttribute="trailing" constant="20" id="vzC-mV-jM8"/>
+                        <constraint firstItem="nyI-LX-hGe" firstAttribute="leading" secondItem="KE0-jL-v7q" secondAttribute="leading" constant="10" id="zrT-qz-IkD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KE0-jL-v7q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Mzv-gb-PAB"/>
+                <constraint firstItem="KE0-jL-v7q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TuV-E7-EgZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KE0-jL-v7q" secondAttribute="trailing" id="giU-2b-98W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KE0-jL-v7q" secondAttribute="bottom" id="x1b-kl-oXA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="148"/>
+        </view>
+    </objects>
+</document>
